@@ -1,0 +1,10 @@
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\bin\Debug\netstandard2.1\OwnerDataExt.deps.json
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\bin\Debug\netstandard2.1\OwnerDataExt.dll
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\bin\Debug\netstandard2.1\OwnerDataExt.pdb
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.csproj.AssemblyReference.cache
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.GeneratedMSBuildEditorConfig.editorconfig
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.AssemblyInfoInputs.cache
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.AssemblyInfo.cs
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.csproj.CoreCompileInputs.cache
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.dll
+C:\C# Projects\Owner_Evolution\Evolution\OwnerDataExt\obj\Debug\netstandard2.1\OwnerDataExt.pdb

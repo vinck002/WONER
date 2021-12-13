@@ -1,0 +1,7 @@
+﻿<FileList>
+  <File Reference="C1.C1Excel.4.5.2.dll">
+    <ToolboxItems VSCategory="C1 WinForms Controls" BlendCategory="C1 WinForms Controls">
+      <Item Type = "C1.C1Excel.C1XLBook"/>
+    </ToolboxItems>
+  </File>
+</FileList>

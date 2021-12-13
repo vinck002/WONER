@@ -1,0 +1,6 @@
+C:\C# Projects\Owner_Evolution\Evolution\API\bin\Debug\API.dll
+C:\C# Projects\Owner_Evolution\Evolution\API\bin\Debug\API.pdb
+C:\C# Projects\Owner_Evolution\Evolution\API\obj\Debug\API.csproj.AssemblyReference.cache
+C:\C# Projects\Owner_Evolution\Evolution\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+C:\C# Projects\Owner_Evolution\Evolution\API\obj\Debug\API.dll
+C:\C# Projects\Owner_Evolution\Evolution\API\obj\Debug\API.pdb

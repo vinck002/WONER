@@ -1,0 +1,1384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.EntityFrameworkCore.Design.3.1.21\build\net461\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.21\build\net461\Microsoft.EntityFrameworkCore.Design.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D04FFCF2-B57A-4542-86FF-5A0255F72B29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Evolution</RootNamespace>
+    <AssemblyName>Evolution</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\LHVCDevelopment2\Desktop\Osvaldo\ProgramacionWeb\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hotel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>369E9C3C72E7C1EDA510174B9F0B28E9B8231D33</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Evolution_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Evolution.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Azure.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Core.1.6.0\lib\net461\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity, Version=1.3.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Azure.Identity.1.3.0\lib\netstandard2.0\Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Excel.4.5.2, Version=4.5.20202.450, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.C1Excel.4.5.20202.450\lib\net452\C1.C1Excel.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2, Version=4.5.20202.450, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.4.5.20202.450\lib\net452\C1.Win.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.Bitmap.4.5.2, Version=4.5.20202.450, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.Bitmap.4.5.20202.450\lib\net452\C1.Win.Bitmap.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2, Version=4.5.20202.450, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1Command.4.5.20202.450\lib\net452\C1.Win.C1Command.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1DX.4.5.2, Version=4.5.20202.450, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1DX.4.5.20202.450\lib\net452\C1.Win.C1DX.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MediaFoundation, Version=3.1.0.32450, Culture=neutral, PublicKeyToken=36fa660e1d6ebf8d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R3 2020\Bin50\MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R3 2020\Bin50\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.SqlClient.4.0.0\lib\net461\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.21\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.21\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Design.3.1.21\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.21\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.21\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.21\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.21.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.21\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.22.0.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.4.22.0\lib\net461\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal, Version=2.16.5.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.Extensions.Msal.2.16.5\lib\net45\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.6.8.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.6.8.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.6.8.0\lib\net461\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.6.8.0\lib\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RadControlSpy, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\RadControlSpy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.TypeConverter.4.3.0\lib\net462\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.6.8.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.ProtectedData.4.5.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.RadDock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.SpellChecker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.Desert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Material, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.Material.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2021.2.614.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="TelerikCommon, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2021.2.615.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountReceivableContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountReceivableContract.Designer.cs">
+      <DependentUpon>AccountReceivableContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgreementsTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgreementsTransfer.Designer.cs">
+      <DependentUpon>AgreementsTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgreementsTransference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgreementsTransference.Designer.cs">
+      <DependentUpon>AgreementsTransference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ArrearsContractCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArrearsContractCommission.Designer.cs">
+      <DependentUpon>ArrearsContractCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ArrearsContractCommissionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArrearsContractCommissionHistory.Designer.cs">
+      <DependentUpon>ArrearsContractCommissionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank.Designer.cs">
+      <DependentUpon>Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankTransference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BankTransference.Designer.cs">
+      <DependentUpon>BankTransference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BonusCommisioner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BonusCommisioner.Designer.cs">
+      <DependentUpon>BonusCommisioner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BonusCommissionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BonusCommissionHistory.Designer.cs">
+      <DependentUpon>BonusCommissionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BonusCommissions\BonusCommissionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BonusCommissions\BonusCommissionReport.Designer.cs">
+      <DependentUpon>BonusCommissionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BonusCommissions\PrintBCommissions.cs" />
+    <Compile Include="Forms\BonusTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BonusTemplate.Designer.cs">
+      <DependentUpon>BonusTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstatePropertyModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstatePropertyModal.Designer.cs">
+      <DependentUpon>RealEstatePropertyModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateRegistry.Designer.cs">
+      <DependentUpon>RealEstateRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\BonusTemplateExport\BonusTemplateExports.cs" />
+    <Compile Include="Forms\CancellationNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CancellationNC.Designer.cs">
+      <DependentUpon>CancellationNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChoosExportColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChoosExportColumns.Designer.cs">
+      <DependentUpon>ChoosExportColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommissionProjected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommissionProjected.Designer.cs">
+      <DependentUpon>CommissionProjected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommissionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommissionReport.Designer.cs">
+      <DependentUpon>CommissionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommissionSummaryByCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommissionSummaryByCompany.Designer.cs">
+      <DependentUpon>CommissionSummaryByCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyContract.Designer.cs">
+      <DependentUpon>CompanyContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyGuarantee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyGuarantee.Designer.cs">
+      <DependentUpon>CompanyGuarantee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyPaymentAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyPaymentAdjust.Designer.cs">
+      <DependentUpon>CompanyPaymentAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyPaymentAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyPaymentAdjustment.Designer.cs">
+      <DependentUpon>CompanyPaymentAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyPercent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyPercent.Designer.cs">
+      <DependentUpon>CompanyPercent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractAuthorization.Designer.cs">
+      <DependentUpon>ContractAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractInfoView.Designer.cs">
+      <DependentUpon>ContractInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractInfoViewAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractInfoViewAll.Designer.cs">
+      <DependentUpon>ContractInfoViewAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractPaymentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractPaymentStatus.Designer.cs">
+      <DependentUpon>ContractPaymentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractSequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractSequence.Designer.cs">
+      <DependentUpon>ContractSequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Encryption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Encryption.Designer.cs">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GlobalContractAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GlobalContractAuthorization.Designer.cs">
+      <DependentUpon>GlobalContractAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HistoryCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistoryCommission.Designer.cs">
+      <DependentUpon>HistoryCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HoldCanceledContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HoldCanceledContract.Designer.cs">
+      <DependentUpon>HoldCanceledContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HoldSettlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HoldSettlement.Designer.cs">
+      <DependentUpon>HoldSettlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImportContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportContract.Designer.cs">
+      <DependentUpon>ImportContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberCommision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberCommision.Designer.cs">
+      <DependentUpon>MemberCommision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberCommisionDevolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberCommisionDevolution.Designer.cs">
+      <DependentUpon>MemberCommisionDevolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MemberCommisionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MemberCommisionHistory.Designer.cs">
+      <DependentUpon>MemberCommisionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OCCommisionPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OCCommisionPayment.Designer.cs">
+      <DependentUpon>OCCommisionPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OutofPender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutofPender.Designer.cs">
+      <DependentUpon>OutofPender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OutOfPenderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutOfPenderHistory.Designer.cs">
+      <DependentUpon>OutOfPenderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OwnerCircleCommision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OwnerCircleCommision.Designer.cs">
+      <DependentUpon>OwnerCircleCommision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OwnerCircleReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OwnerCircleReservation.Designer.cs">
+      <DependentUpon>OwnerCircleReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OwnerComisionExpiredDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OwnerComisionExpiredDay.Designer.cs">
+      <DependentUpon>OwnerComisionExpiredDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentChangeTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentChangeTracking.Designer.cs">
+      <DependentUpon>PaymentChangeTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentDetail.Designer.cs">
+      <DependentUpon>PaymentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentFromUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentFromUpgrade.Designer.cs">
+      <DependentUpon>PaymentFromUpgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentOld.Designer.cs">
+      <DependentUpon>PaymentOld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentSynchronize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentSynchronize.Designer.cs">
+      <DependentUpon>PaymentSynchronize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PayOffCommision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PayOffCommision.Designer.cs">
+      <DependentUpon>PayOffCommision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PayoffHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PayoffHistory.Designer.cs">
+      <DependentUpon>PayoffHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Percentdistribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Percentdistribution.Designer.cs">
+      <DependentUpon>Percentdistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProcessContracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProcessContracts.Designer.cs">
+      <DependentUpon>ProcessContracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProcessedCommissionPenderToPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProcessedCommissionPenderToPay.Designer.cs">
+      <DependentUpon>ProcessedCommissionPenderToPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealStateFeeGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealStateFeeGeneration.Designer.cs">
+      <DependentUpon>RealStateFeeGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealStatePaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealStatePaymentHistory.Designer.cs">
+      <DependentUpon>RealStatePaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealStateProcessHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealStateProcessHistory.Designer.cs">
+      <DependentUpon>RealStateProcessHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealStateRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealStateRegistry.Designer.cs">
+      <DependentUpon>RealStateRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\R_AnnualSettlementSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\R_AnnualSettlementSummary.Designer.cs">
+      <DependentUpon>R_AnnualSettlementSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\R_ContractStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\R_ContractStatistic.Designer.cs">
+      <DependentUpon>R_ContractStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\R_Provision_For_Owners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\R_Provision_For_Owners.Designer.cs">
+      <DependentUpon>R_Provision_For_Owners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\R_ThirdReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\R_ThirdReport.Designer.cs">
+      <DependentUpon>R_ThirdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\R_WeeklyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\R_WeeklyReport.Designer.cs">
+      <DependentUpon>R_WeeklyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectReport.Designer.cs">
+      <DependentUpon>SelectReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetPaymentsHold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetPaymentsHold.Designer.cs">
+      <DependentUpon>SetPaymentsHold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settlement.Designer.cs">
+      <DependentUpon>Settlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TransferPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TransferPayments.Designer.cs">
+      <DependentUpon>TransferPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TransferUpgradePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TransferUpgradePayments.Designer.cs">
+      <DependentUpon>TransferUpgradePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TravelAgentCommission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TravelAgentCommission.Designer.cs">
+      <DependentUpon>TravelAgentCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TravelAgentProcessHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TravelAgentProcessHistory.Designer.cs">
+      <DependentUpon>TravelAgentProcessHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewDTSPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewDTSPayments.Designer.cs">
+      <DependentUpon>ViewDTSPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PaymentDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PaymentDetailView.Designer.cs">
+      <DependentUpon>PaymentDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wait.Designer.cs">
+      <DependentUpon>Wait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\AbrirForm.cs" />
+    <Compile Include="General\AgedAccountReceivable.cs" />
+    <Compile Include="General\AnnualSettlementSummary.cs" />
+    <Compile Include="General\BonusCommision\BonnusCommissionerSP.cs" />
+    <Compile Include="General\BonusCommision\BonusCommisioner_FX.cs" />
+    <Compile Include="General\ColumnExportFx.cs" />
+    <Compile Include="General\ColumnExportModel.cs" />
+    <Compile Include="General\CommissionSummaryByCompany.cs" />
+    <Compile Include="General\ContractsCommission.cs" />
+    <Compile Include="General\ContractStatisticExportation.cs" />
+    <Compile Include="General\ExportArrearsCommission.cs" />
+    <Compile Include="General\ExportCommissionToExcel.cs" />
+    <Compile Include="General\ExportGlobaliaComision.cs" />
+    <Compile Include="General\ExportMemberCommision.cs" />
+    <Compile Include="General\ExportOCCommision.cs" />
+    <Compile Include="General\ExportOutOfPender.cs" />
+    <Compile Include="General\ExportPayments.cs" />
+    <Compile Include="General\ExportPayOff.cs" />
+    <Compile Include="General\ExportToExcel.cs" />
+    <Compile Include="General\ExportToThirdGlobaliaCom.cs" />
+    <Compile Include="General\GlobalAccess.cs" />
+    <Compile Include="General\GridViewFilter.cs" />
+    <Compile Include="General\OpenExcelFile.cs" />
+    <Compile Include="General\ReportProvisionOwner.cs" />
+    <Compile Include="General\ReportToOwnerFeeComisionExp.cs" />
+    <Compile Include="General\ReportToThird.cs" />
+    <Compile Include="General\ReportToThird_v2.cs" />
+    <Compile Include="General\SpreechText.cs" />
+    <Compile Include="General\TravelAgentCommissionExport.cs" />
+    <Compile Include="General\ValidarTexbox.cs" />
+    <Compile Include="General\VerificationSheetExport.cs" />
+    <Compile Include="General\WeeklyReport.cs" />
+    <Compile Include="General\WeeklyReportPropertySummary.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mainmenu.Designer.cs">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Conexion.cs" />
+    <Compile Include="General\Globalvariables.cs" />
+    <Compile Include="General\Sqlcommandexecuter.cs" />
+    <Compile Include="Models\BonusCommissionerModel.cs" />
+    <Compile Include="Models\BonusCommissionModel.cs" />
+    <Compile Include="Models\BonusCommssionDetailModel.cs" />
+    <Compile Include="Models\IBonusCommissioner.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\BonusCommisioner.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BonusCommisioner.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BonusCommissionerMainReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BonusCommissionerMainReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CancellationNCReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CancellationNCReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OcOwnerFeeComexpired.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OcOwnerFeeComexpired.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\OCPaymentReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OCPaymentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ServiceFeeCommisionHistory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceFeeCommisionHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SettlementReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SettlementReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Sub_BonusCommissioner.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sub_BonusCommissioner.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ThirdReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThirdReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\WeeklyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeeklyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AccountReceivableContract.resx">
+      <DependentUpon>AccountReceivableContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgreementsTransfer.resx">
+      <DependentUpon>AgreementsTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgreementsTransference.resx">
+      <DependentUpon>AgreementsTransference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArrearsContractCommission.resx">
+      <DependentUpon>ArrearsContractCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ArrearsContractCommissionHistory.resx">
+      <DependentUpon>ArrearsContractCommissionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bank.resx">
+      <DependentUpon>Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BankTransference.resx">
+      <DependentUpon>BankTransference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BonusCommisioner.resx">
+      <DependentUpon>BonusCommisioner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BonusCommissionHistory.resx">
+      <DependentUpon>BonusCommissionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BonusCommissions\BonusCommissionReport.resx">
+      <DependentUpon>BonusCommissionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BonusTemplate.resx">
+      <DependentUpon>BonusTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancellationNC.resx">
+      <DependentUpon>CancellationNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChoosExportColumns.resx">
+      <DependentUpon>ChoosExportColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommissionProjected.resx">
+      <DependentUpon>CommissionProjected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommissionReport.resx">
+      <DependentUpon>CommissionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommissionSummaryByCompany.resx">
+      <DependentUpon>CommissionSummaryByCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyContract.resx">
+      <DependentUpon>CompanyContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyGuarantee.resx">
+      <DependentUpon>CompanyGuarantee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyPaymentAdjust.resx">
+      <DependentUpon>CompanyPaymentAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyPaymentAdjustment.resx">
+      <DependentUpon>CompanyPaymentAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyPercent.resx">
+      <DependentUpon>CompanyPercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractAuthorization.resx">
+      <DependentUpon>ContractAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractInfoView.resx">
+      <DependentUpon>ContractInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractInfoViewAll.resx">
+      <DependentUpon>ContractInfoViewAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractPaymentStatus.resx">
+      <DependentUpon>ContractPaymentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractSequence.resx">
+      <DependentUpon>ContractSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Encryption.resx">
+      <DependentUpon>Encryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GlobalContractAuthorization.resx">
+      <DependentUpon>GlobalContractAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistoryCommission.resx">
+      <DependentUpon>HistoryCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HoldCanceledContract.resx">
+      <DependentUpon>HoldCanceledContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HoldSettlement.resx">
+      <DependentUpon>HoldSettlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportContract.resx">
+      <DependentUpon>ImportContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberCommision.resx">
+      <DependentUpon>MemberCommision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberCommisionDevolution.resx">
+      <DependentUpon>MemberCommisionDevolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MemberCommisionHistory.resx">
+      <DependentUpon>MemberCommisionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OCCommisionPayment.resx">
+      <DependentUpon>OCCommisionPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutofPender.resx">
+      <DependentUpon>OutofPender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutOfPenderHistory.resx">
+      <DependentUpon>OutOfPenderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OwnerCircleCommision.resx">
+      <DependentUpon>OwnerCircleCommision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OwnerCircleReservation.resx">
+      <DependentUpon>OwnerCircleReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OwnerComisionExpiredDay.resx">
+      <DependentUpon>OwnerComisionExpiredDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentChangeTracking.resx">
+      <DependentUpon>PaymentChangeTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentDetail.resx">
+      <DependentUpon>PaymentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentFromUpgrade.resx">
+      <DependentUpon>PaymentFromUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentOld.resx">
+      <DependentUpon>PaymentOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentSynchronize.resx">
+      <DependentUpon>PaymentSynchronize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PayOffCommision.resx">
+      <DependentUpon>PayOffCommision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PayoffHistory.resx">
+      <DependentUpon>PayoffHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Percentdistribution.resx">
+      <DependentUpon>Percentdistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProcessContracts.resx">
+      <DependentUpon>ProcessContracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProcessedCommissionPenderToPay.resx">
+      <DependentUpon>ProcessedCommissionPenderToPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\RealEstatePropertyModal.resx">
+      <DependentUpon>RealEstatePropertyModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\RealEstateRegistry.resx">
+      <DependentUpon>RealEstateRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealStateFeeGeneration.resx">
+      <DependentUpon>RealStateFeeGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealStatePaymentHistory.resx">
+      <DependentUpon>RealStatePaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealStateProcessHistory.resx">
+      <DependentUpon>RealStateProcessHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealStateRegistry.resx">
+      <DependentUpon>RealStateRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\R_AnnualSettlementSummary.resx">
+      <DependentUpon>R_AnnualSettlementSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\R_ContractStatistic.resx">
+      <DependentUpon>R_ContractStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\R_Provision_For_Owners.resx">
+      <DependentUpon>R_Provision_For_Owners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\R_ThirdReport.resx">
+      <DependentUpon>R_ThirdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\R_WeeklyReport.resx">
+      <DependentUpon>R_WeeklyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectReport.resx">
+      <DependentUpon>SelectReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetPaymentsHold.resx">
+      <DependentUpon>SetPaymentsHold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settlement.resx">
+      <DependentUpon>Settlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TransferPayments.resx">
+      <DependentUpon>TransferPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TransferUpgradePayments.resx">
+      <DependentUpon>TransferUpgradePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TravelAgentCommission.resx">
+      <DependentUpon>TravelAgentCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TravelAgentProcessHistory.resx">
+      <DependentUpon>TravelAgentProcessHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewDTSPayments.resx">
+      <DependentUpon>ViewDTSPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PaymentDetailView.resx">
+      <DependentUpon>PaymentDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wait.resx">
+      <DependentUpon>Wait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mainmenu.resx">
+      <DependentUpon>Mainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\BonusCommisioner.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BonusCommisioner.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BonusCommissionerMainReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BonusCommissionerMainReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CancellationNCReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CancellationNCReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OcOwnerFeeComexpired.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OcOwnerFeeComexpired.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OCPaymentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OCPaymentReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ServiceFeeCommisionHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ServiceFeeCommisionHistory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SettlementReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SettlementReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Sub_BonusCommissioner.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sub_BonusCommissioner.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ThirdReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ThirdReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WeeklyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WeeklyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docs\" />
+    <Folder Include="General\API\" />
+    <Folder Include="Owner\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\BACKGROUND-beta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\KEY\1463517769_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\EXIT\1463694310_sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hotel.ico" />
+    <None Include="Resources\reload1_78509.png" />
+    <None Include="Resources\arrowreload_flecha_1318.png" />
+    <None Include="Resources\search_home_house_real_estate_icon_150332.png" />
+    <None Include="Resources\document_add_256_icon-icons.com_75994 %281%29.png" />
+    <None Include="Resources\1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361 %282%29.png" />
+    <None Include="Resources\add_icon-icons.com_74429 %281%29.png" />
+    <None Include="Resources\add_icon-icons.com_74429.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\User.ico" />
+    <None Include="Resources\dinero.ico" />
+    <None Include="Resources\OwnerPic2.jpg" />
+    <None Include="Resources\OwnerPic1.jpg" />
+    <None Include="Resources\OwnerPic.jpg" />
+    <None Include="Resources\house_blue.ico" />
+    <None Include="Resources\Home1.png" />
+    <None Include="Resources\hotel11.png" />
+    <None Include="Pictures\EXIT\Home.png" />
+    <None Include="Resources\key.ico" />
+    <None Include="Resources\Updating.gif" />
+    <None Include="Resources\loadfile.ico" />
+    <None Include="Resources\pleasewait.gif" />
+    <None Include="Resources\processing.gif" />
+    <None Include="Resources\transfer1.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\overview.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\Hold.ico" />
+    <None Include="Resources\payment.ico" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\XML.ico" />
+    <None Include="Resources\export.ico" />
+    <None Include="Resources\excel.ico" />
+    <None Include="Resources\printer_green.ico" />
+    <None Include="Resources\ok.ico" />
+    <None Include="Resources\stop.ico" />
+    <None Include="Resources\quitar.ico" />
+    <None Include="Resources\remove.ico" />
+    <None Include="Resources\save.ico" />
+    <None Include="Resources\edit_clear %281%29.ico" />
+    <None Include="Resources\edit_clear.ico" />
+    <None Include="Resources\edit_clear.png" />
+    <None Include="Resources\find.ico" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\salir.ico" />
+    <None Include="Pictures\hotel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Persistence.DataBase\Persistence.DataBase.csproj">
+      <Project>{bfdbb87c-cedf-4c6c-a6ec-27c084aedb51}</Project>
+      <Name>Persistence.DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{3bc4442f-8d3c-4dc7-9497-c0b47523cf36}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.21\build\net461\Microsoft.EntityFrameworkCore.Design.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.EntityFrameworkCore.Design.3.1.21\build\net461\Microsoft.EntityFrameworkCore.Design.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

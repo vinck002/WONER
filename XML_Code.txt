@@ -1,0 +1,77 @@
+public void ExportToXML(DataView DV)
+        { SaveFileDialog fichero = new SaveFileDialog();
+            fichero.Filter = "XML (*.xml)|*.xml";
+            decimal deposit, tax, totalimporte, importemembership, closingcost,Financing;
+              if (fichero.ShowDialog() == DialogResult.OK) 
+            {
+                  StreamWriter texto = new StreamWriter(fichero.FileName);
+                  string linea = "<?xml version=\"1.0\"?>" +"\r\n"+ "<XMLContratosLifeStyle>" + "\r\n" ;
+                    for(int i=0; i<DV.Count; i++)
+                    {/*----------------------------------------------------------------------------------------------------------------------------------------*/
+                        deposit = decimal.Parse (DV.Table.Rows[i]["DOWNPAYMENT"].ToString());
+                        tax = decimal.Parse(DV.Table.Rows[i]["Tax"].ToString());
+                        totalimporte = decimal.Parse(DV.Table.Rows[i]["totalImporte"].ToString());
+                        importemembership = decimal.Parse(DV.Table.Rows[i]["ContractValue"].ToString());
+                        closingcost = decimal.Parse(DV.Table.Rows[i]["ClosingCost"].ToString());
+                        Financing = decimal.Parse(DV.Table.Rows[i]["totalImporte"].ToString());
+                        /*----------------------------------------------------------------------------------------------------------------------------------------*/
+                        linea = linea +"\t"+ "<Contrato>" +"\r\n";
+                        linea = linea +"\t\t"+ "<NumContrato>" + DV.Table.Rows[i]["agreementnumber"].ToString() + "</NumContrato>" +"\r\n"+
+
+                            "\t\t"+ " <Estado>"+ DV.Table.Rows[i]["Status"].ToString() +"</Estado>" +"\r\n"+
+                            "\t\t"+ "<Club>" + DV.Table.Rows[i]["c_salesfloor"].ToString() + "</Club>" +"\r\n"+
+                            "\t\t"+ "<TipoPrograma> " + DV.Table.Rows[i]["Program"].ToString() + "</TipoPrograma>" +"\r\n"+
+                            "\t\t"+ "<Hotel> " + DV.Table.Rows[i]["Property"].ToString() + "</Hotel>" +"\r\n"+
+                            "\t\t"+ "<FechaVenta>" + DV.Table.Rows[i]["CONTRACTDATE"].ToString() + "</FechaVenta>" +"\r\n"+
+                            "\t\t"+ "<FechaDesde>" + DV.Table.Rows[i]["datefrom"].ToString() + "</FechaDesde>" +"\r\n"+
+                            "\t\t"+"<FechaHasta>" + DV.Table.Rows[i]["dateuntil"].ToString() + "</FechaHasta>" +"\r\n"+
+                            "\t\t"+ "<TipoMembresia>" + DV.Table.Rows[i]["Membershiptype"].ToString() + "</TipoMembresia>" +"\r\n"+
+                            "\t\t"+ "<Paquete>" + DV.Table.Rows[i]["dateuntil"].ToString() + "</Paquete>" +"\r\n"+
+                            "\t\t"+ "<TipoHab>" + DV.Table.Rows[i]["UNITTYPENAME"].ToString() + "</TipoHab>" +"\r\n"+
+                            "\t\t"+ "<NumOcu>" + DV.Table.Rows[i]["numocu"].ToString() + "</NumOcu>" +"\r\n"+
+                            "\t\t"+ "<Temporada>Roja</Temporada>" +"\r\n"+
+                            "\t\t"+ "<SemanasCompradas>" + DV.Table.Rows[i]["SemanasC"].ToString() + "</SemanasCompradas>" +"\r\n"+
+                            "\t\t"+ "<SemanasUsadas>0</SemanasUsadas>" +"\r\n"+
+                            "\t\t"+ "<BonusTime>" + DV.Table.Rows[i]["bonustime"].ToString() + "</BonusTime>" +"\r\n"+
+                            "\t\t"+ "<ImporteMembresia>" + importemembership.ToString("0.00") + "</ImporteMembresia>" +"\r\n"+
+                            "\t\t"+ "<GastosAdminYContrato>" + closingcost.ToString("0.00") + "</GastosAdminYContrato>" +"\r\n"+
+                            "\t\t"+  "<Impuestos>" + tax.ToString("0.00") + "</Impuestos>" +"\r\n"+
+                            "\t\t"+ "<TotalImporte>" + totalimporte.ToString("0.00") + "</TotalImporte>" +"\r\n"+
+                            "\t\t"+ "<Deposito>" + deposit.ToString("0.00") + "</Deposito>" +"\r\n"+
+                            "\t\t"+ "<ImporteFinanciacion>" + Financing.ToString("0.00") + "</ImporteFinanciacion>" +"\r\n"+
+                            "\t\t"+ "<FechaIni>" + DV.Table.Rows[i]["datefrom"].ToString() + "</FechaIni>" +"\r\n"+
+                            "\t\t"+  "<FechaFin>" + DV.Table.Rows[i]["dateuntil"].ToString() + "</FechaFin >" +"\r\n"+
+                            "\t\t"+ "<TipoInteres>3</TipoInteres >" +"\r\n"+ /*este campo no va*/
+                            "\t\t"+  "<NumCuotas>" + DV.Table.Rows[i]["NCuotas"].ToString() + "</NumCuotas>" +"\r\n"+
+                            "\t\t"+ "<Comprador>" +"\r\n"+
+                            "\t\t"+ "<LinComprador>1</LinComprador>" +"\r\n"+
+                            "\t\t"+ "<NumCont>" + DV.Table.Rows[i]["agreementnumber"].ToString() + "</NumCont>" +"\r\n"+
+                            "\t\t"+  "<Nombre>" + DV.Table.Rows[i]["Comprador1"].ToString() + "</Nombre>" +"\r\n"+
+                            "\t\t"+ "<Direccion>" + DV.Table.Rows[i]["Address"].ToString() + "</Direccion>" +"\r\n"+
+                            "\t\t"+ "<Cuidad>" + DV.Table.Rows[i]["city"].ToString() + "</Cuidad>" +"\r\n"+
+                            "\t\t"+ "<Provincia>" + DV.Table.Rows[i]["State"].ToString() + "</Provincia>" +"\r\n"+
+                            "\t\t"+ "<CodPostal>" + DV.Table.Rows[i]["zip"].ToString() + "</CodPostal>" +"\r\n"+
+                            "\t\t"+ "</Comprador>"+"\r\n";
+                        if (DV.Table.Rows[i]["Comprador2"].ToString().Length > 3) /*"#,##0.00"*/
+                      {
+                           linea = linea +"\t\t\t"+ "<Comprador>" +"\r\n"+
+                            "\t\t\t\t"+" <LinComprador>1</LinComprador>" +"\r\n"+
+                            "\t\t\t\t"+  "<NumCont>" + DV.Table.Rows[i]["agreementnumber"].ToString() + "</NumCont>" +"\r\n"+
+                            "\t\t\t\t"+ "<Nombre>" + DV.Table.Rows[i]["Comprador2"].ToString() + "</Nombre>" +"\r\n"+
+                            "\t\t\t\t"+  "<Direccion>" + DV.Table.Rows[i]["Address"].ToString() + "</Direccion>" +"\r\n"+
+                            "\t\t\t\t"+ "<Cuidad>" + DV.Table.Rows[i]["city"].ToString() + "</Cuidad>" +"\r\n"+
+                            "\t\t\t\t"+ "<Provincia>" + DV.Table.Rows[i]["State"].ToString() + "</Provincia>" +"\r\n"+
+                            "\t\t\t\t"+ "<CodPostal>" + DV.Table.Rows[i]["zip"].ToString() + "</CodPostal>" +"\r\n"+
+                            "\t\t\t"+ "</Comprador>"+"\r\n";
+                        }
+                          linea = linea +"\t"+ "</Contrato>"+"\r\n\r\n";
+                    } 
+            linea = linea + "</XMLContratosLifeStyle>";
+                // texto.WriteLine(string.Format("{0}", "hola"));
+                texto.WriteLine(linea);
+                texto.Close();
+                
+            }
+
+
+        }
