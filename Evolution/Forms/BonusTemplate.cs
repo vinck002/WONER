@@ -47,14 +47,15 @@ namespace Evolution.Forms
             txtContractFound.Text = (_ContratcCounter).ToString();
             ContractSelected();
             DataTable esto = Globalvariables.DVpermit.Table;
-            if (Globalvariables.DVpermit.Table.AsEnumerable().Where(x => x.Field<int>("Code") == 470 && x.Field<int>("Value") == 1).Count() > 0)
-            {
-                btnApply.Visible = true;
-            }
-            else
-            {
-                btnApply.Visible = false;
-            }
+            
+            //if (Globalvariables.DVpermit.Table.AsEnumerable().Where(x => x.Field<int>("Code") == 470 && x.Field<int>("Value") == 1).Count() > 0) // BOTON PROCES INVISIBLE TEMPORALMENTE
+            //{
+            //    btnApply.Visible = true;
+            //}
+            //else
+            //{
+            //    btnApply.Visible = false;
+            //}
         }
 
         private void bHidtory_Click(object sender, EventArgs e)
@@ -73,6 +74,8 @@ namespace Evolution.Forms
         {
             DateTime DateTex = DateTime.Now;
             dtpContractDate1.Text = DateTex.AddMonths(-1).ToString("MM-dd-yyyy");
+            dtpContractDate1.MaxDate = DateTime.Today;
+            dtpContractDate2.MaxDate =  DateTime.Today;
             dtpContractDate2.Text = DateTex.ToString("MM-dd-yyyy");
         }
 
@@ -132,7 +135,8 @@ namespace Evolution.Forms
             }
             else
             {
-                dtpContractDate1.Text = datefrom.ToString(); dtpContractDate2.Text = dateTo.ToString();
+                dtpContractDate1.Text = datefrom.ToString(); 
+                dtpContractDate2.Text = dateTo.ToString();
             }
 
             DGVAgreemetnResultCheckBlock();
@@ -439,9 +443,9 @@ namespace Evolution.Forms
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
-            DateTime DateTex = DateTime.Now;
-            dtpContractDate1.Text = DateTex.AddMonths(-1).ToString("MM-dd-yyyy");
-            dtpContractDate2.Text = DateTex.ToString("MM-dd-yyyy");
+            //DateTime DateTex = DateTime.Now;
+            //dtpContractDate1.Text = DateTex.AddMonths(-1).ToString("MM-dd-yyyy");
+            //dtpContractDate2.Text = DateTex.ToString("MM-dd-yyyy");
             ClearFields();
         }
 

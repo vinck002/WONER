@@ -76,7 +76,7 @@ namespace Evolution.Forms
         {
             try
             {
-                DVSearch = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L "+((ckbHistory.Checked==false)? 2 : 3)+","+((SalesfloorID.Text.Trim() == "")? "null" : SalesfloorID.Text.Trim())+","+
+                DVSearch = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L_v1 "+((ckbHistory.Checked==false)? 2 : 3)+","+((SalesfloorID.Text.Trim() == "")? "null" : SalesfloorID.Text.Trim())+","+
                   ((PropertyID.Text.Trim() == "") ? "null" : "'"+ PropertyID.Text.Trim() +"'") +",null,null,null,null,"+ ((Contract1.Text.Trim() == "") ? "1" : Contract1.Text.Trim()) + ","+
                   ((Contract2.Text.Trim() == "") ? "999999999999" : Contract2.Text.Trim()) + ",'"+ ((CreationDate1.Text == "") ? "01-01-1990" : CreationDate1.Text.Trim()) + "','"+
                  ((CreationDate2.Text == "") ? "01-01-3000" : CreationDate2.Text.Trim()) + "'").DefaultView;
@@ -163,7 +163,7 @@ namespace Evolution.Forms
             {
                 if(int.Parse(GRDHistory.Rows[R1].Cells["Select"].Value.ToString()) != 0 && decimal.Parse(GRDHistory.Rows[R1].Cells["ToPay"].Value.ToString()) != 0)
                 {
-                    SqlQuery.Append("exec LS_MemberServiceFeePayment_M 0,0," + GRDHistory.Rows[R1].Cells["AgreementID"].Value.ToString() + "," + GRDHistory.Rows[R1].Cells["CompanyPercentID"].Value.ToString() + "," +
+                    SqlQuery.Append($"exec LS_MemberServiceFeePayment_M 0,0," + GRDHistory.Rows[R1].Cells["AgreementID"].Value.ToString() + "," + GRDHistory.Rows[R1].Cells["CompanyPercentID"].Value.ToString() + "," +
                        decimal.Parse(GRDHistory.Rows[R1].Cells["ToPay"].Value.ToString()) +","+ General.Globalvariables.guserid +",null,"+ ProccessStatus + ""+" ");
                 }
                 

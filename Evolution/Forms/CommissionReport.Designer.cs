@@ -60,23 +60,15 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn28 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn29 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn30 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn31 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CommissionReport));
             this.radTitleBar1 = new Telerik.WinControls.UI.RadTitleBar();
             this.TransactionsList = new Telerik.WinControls.UI.RadGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.viewPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unauthorizeContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contractPaymentStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transferUpgradePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.paymentAdjustmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aquaTheme1 = new Telerik.WinControls.Themes.AquaTheme();
             this.breezeTheme1 = new Telerik.WinControls.Themes.BreezeTheme();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.bThird = new Telerik.WinControls.UI.RadButton();
-            this.bExit = new Telerik.WinControls.UI.RadButton();
-            this.bPrint = new Telerik.WinControls.UI.RadButton();
-            this.bProccess = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
             this.Found = new Telerik.WinControls.UI.RadLabel();
             this.Totaltobepaid = new Telerik.WinControls.UI.RadTextBox();
@@ -99,26 +91,32 @@
             this.Contract1 = new Telerik.WinControls.UI.RadTextBox();
             this.PropertyID = new Telerik.WinControls.UI.RadTextBox();
             this.SalesfloorID = new Telerik.WinControls.UI.RadTextBox();
-            this.Btnclear = new Telerik.WinControls.UI.RadButton();
-            this.bSearch = new Telerik.WinControls.UI.RadButton();
             this.Companylist = new Telerik.WinControls.UI.RadDropDownList();
             this.desertTheme1 = new Telerik.WinControls.Themes.DesertTheme();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bImport = new Telerik.WinControls.UI.RadButton();
             this.AgreementIDView = new Telerik.WinControls.UI.RadLabel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.ExcludePaid = new Telerik.WinControls.UI.RadCheckBox();
             this.ExcludeCanceled = new Telerik.WinControls.UI.RadCheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bImport = new Telerik.WinControls.UI.RadButton();
+            this.Btnclear = new Telerik.WinControls.UI.RadButton();
+            this.bSearch = new Telerik.WinControls.UI.RadButton();
+            this.bThird = new Telerik.WinControls.UI.RadButton();
+            this.bExit = new Telerik.WinControls.UI.RadButton();
+            this.bPrint = new Telerik.WinControls.UI.RadButton();
+            this.bProccess = new Telerik.WinControls.UI.RadButton();
+            this.viewPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unauthorizeContractToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contractPaymentStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transferUpgradePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paymentAdjustmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewLeadStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radTitleBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsList.MasterTemplate)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bThird)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bPrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bProccess)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Found)).BeginInit();
@@ -144,14 +142,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.Contract1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PropertyID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesfloorID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Btnclear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Companylist)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgreementIDView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExcludePaid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExcludeCanceled)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bImport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btnclear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bThird)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bProccess)).BeginInit();
             this.SuspendLayout();
             // 
             // radTitleBar1
@@ -183,9 +185,12 @@
             this.TransactionsList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TransactionsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.TransactionsList.ContextMenuStrip = this.contextMenuStrip1;
-            this.TransactionsList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TransactionsList.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TransactionsList.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TransactionsList.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TransactionsList.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.TransactionsList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TransactionsList.Location = new System.Drawing.Point(5, 98);
             // 
             // 
@@ -195,24 +200,29 @@
             this.TransactionsList.MasterTemplate.AllowColumnHeaderContextMenu = false;
             this.TransactionsList.MasterTemplate.AllowDeleteRow = false;
             this.TransactionsList.MasterTemplate.AllowRowHeaderContextMenu = false;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FieldName = "membername";
             gridViewTextBoxColumn1.HeaderText = "Member Name";
             gridViewTextBoxColumn1.Name = "membername";
             gridViewTextBoxColumn1.Width = 145;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.FieldName = "agreementnumber";
             gridViewTextBoxColumn2.HeaderText = "Contract No.";
             gridViewTextBoxColumn2.Name = "contractno";
             gridViewTextBoxColumn2.Width = 100;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.FieldName = "type";
             gridViewTextBoxColumn3.HeaderText = "Type";
             gridViewTextBoxColumn3.Name = "type";
             gridViewTextBoxColumn3.Width = 80;
+            gridViewDateTimeColumn1.EnableExpressionEditor = false;
             gridViewDateTimeColumn1.FieldName = "contractdate";
             gridViewDateTimeColumn1.FormatString = "{0:MM-dd-yyyy}";
             gridViewDateTimeColumn1.HeaderText = "Contract Date";
             gridViewDateTimeColumn1.Name = "contractdate";
             gridViewDateTimeColumn1.Width = 120;
             gridViewTextBoxColumn4.DataType = typeof(decimal);
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
             gridViewTextBoxColumn4.FieldName = "Price";
             gridViewTextBoxColumn4.FormatString = "{0:N2}";
             gridViewTextBoxColumn4.HeaderText = "Price";
@@ -220,6 +230,7 @@
             gridViewTextBoxColumn4.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn4.Width = 70;
             gridViewTextBoxColumn5.DataType = typeof(decimal);
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
             gridViewTextBoxColumn5.FieldName = "DP";
             gridViewTextBoxColumn5.FormatString = "{0:N2}";
             gridViewTextBoxColumn5.HeaderText = "DP%";
@@ -227,6 +238,7 @@
             gridViewTextBoxColumn5.ReadOnly = true;
             gridViewTextBoxColumn5.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn6.DataType = typeof(decimal);
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
             gridViewTextBoxColumn6.FieldName = "paymentmade";
             gridViewTextBoxColumn6.FormatString = "{0:N2}";
             gridViewTextBoxColumn6.HeaderText = "Payment Made";
@@ -236,6 +248,7 @@
             gridViewTextBoxColumn6.Width = 80;
             gridViewTextBoxColumn6.WrapText = true;
             gridViewTextBoxColumn7.DataType = typeof(decimal);
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
             gridViewTextBoxColumn7.FieldName = "PaymentApplied";
             gridViewTextBoxColumn7.FormatString = "{0:N2}";
             gridViewTextBoxColumn7.HeaderText = "Payment Made";
@@ -244,151 +257,180 @@
             gridViewTextBoxColumn7.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn7.Width = 80;
             gridViewTextBoxColumn7.WrapText = true;
-            gridViewTextBoxColumn8.DataType = typeof(decimal);
-            gridViewTextBoxColumn8.FieldName = "MRApplied";
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.FieldName = "QLead";
             gridViewTextBoxColumn8.FormatString = "{0:N2}";
-            gridViewTextBoxColumn8.HeaderText = "MR Made";
-            gridViewTextBoxColumn8.Name = "MRApplied";
-            gridViewTextBoxColumn8.ReadOnly = true;
-            gridViewTextBoxColumn8.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn8.Width = 70;
-            gridViewTextBoxColumn8.WrapText = true;
+            gridViewTextBoxColumn8.HeaderText = "Qty Lead ";
+            gridViewTextBoxColumn8.Name = "QLead";
+            gridViewTextBoxColumn8.Width = 61;
             gridViewTextBoxColumn9.DataType = typeof(decimal);
-            gridViewTextBoxColumn9.FieldName = "com";
+            gridViewTextBoxColumn9.EnableExpressionEditor = false;
+            gridViewTextBoxColumn9.FieldName = "MRApplied";
             gridViewTextBoxColumn9.FormatString = "{0:N2}";
-            gridViewTextBoxColumn9.HeaderText = "% Com";
-            gridViewTextBoxColumn9.Name = "com";
+            gridViewTextBoxColumn9.HeaderText = "MR Made";
+            gridViewTextBoxColumn9.Name = "MRApplied";
             gridViewTextBoxColumn9.ReadOnly = true;
             gridViewTextBoxColumn9.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn9.Width = 60;
+            gridViewTextBoxColumn9.Width = 70;
+            gridViewTextBoxColumn9.WrapText = true;
             gridViewTextBoxColumn10.DataType = typeof(decimal);
-            gridViewTextBoxColumn10.FieldName = "ValueToPay";
+            gridViewTextBoxColumn10.EnableExpressionEditor = false;
+            gridViewTextBoxColumn10.FieldName = "com";
             gridViewTextBoxColumn10.FormatString = "{0:N2}";
-            gridViewTextBoxColumn10.HeaderText = "Amount Date";
-            gridViewTextBoxColumn10.Name = "ToPay";
+            gridViewTextBoxColumn10.HeaderText = "% Com";
+            gridViewTextBoxColumn10.Name = "com";
+            gridViewTextBoxColumn10.ReadOnly = true;
             gridViewTextBoxColumn10.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn10.Width = 80;
-            gridViewTextBoxColumn10.WrapText = true;
+            gridViewTextBoxColumn10.Width = 60;
             gridViewTextBoxColumn11.DataType = typeof(decimal);
-            gridViewTextBoxColumn11.FieldName = "amount";
+            gridViewTextBoxColumn11.EnableExpressionEditor = false;
+            gridViewTextBoxColumn11.FieldName = "ValueToPay";
             gridViewTextBoxColumn11.FormatString = "{0:N2}";
-            gridViewTextBoxColumn11.HeaderText = "Amount";
-            gridViewTextBoxColumn11.Name = "amount";
-            gridViewTextBoxColumn11.ReadOnly = true;
+            gridViewTextBoxColumn11.HeaderText = "Amount Date";
+            gridViewTextBoxColumn11.Name = "ToPay";
             gridViewTextBoxColumn11.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn11.Width = 80;
-            gridViewTextBoxColumn12.FieldName = "comment";
-            gridViewTextBoxColumn12.HeaderText = "Comment";
-            gridViewTextBoxColumn12.Name = "comment";
-            gridViewTextBoxColumn12.Width = 90;
-            gridViewTextBoxColumn13.DataType = typeof(decimal);
-            gridViewTextBoxColumn13.FieldName = "pendingbalance";
-            gridViewTextBoxColumn13.FormatString = "{0:N2}";
-            gridViewTextBoxColumn13.HeaderText = "Pending Balance";
-            gridViewTextBoxColumn13.Name = "pendingbalance";
-            gridViewTextBoxColumn13.ReadOnly = true;
-            gridViewTextBoxColumn13.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn13.Width = 80;
-            gridViewTextBoxColumn13.WrapText = true;
+            gridViewTextBoxColumn11.WrapText = true;
+            gridViewTextBoxColumn12.DataType = typeof(decimal);
+            gridViewTextBoxColumn12.EnableExpressionEditor = false;
+            gridViewTextBoxColumn12.FieldName = "amount";
+            gridViewTextBoxColumn12.FormatString = "{0:N2}";
+            gridViewTextBoxColumn12.HeaderText = "Amount";
+            gridViewTextBoxColumn12.Name = "amount";
+            gridViewTextBoxColumn12.ReadOnly = true;
+            gridViewTextBoxColumn12.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            gridViewTextBoxColumn12.Width = 80;
+            gridViewTextBoxColumn13.EnableExpressionEditor = false;
+            gridViewTextBoxColumn13.FieldName = "comment";
+            gridViewTextBoxColumn13.HeaderText = "Comment";
+            gridViewTextBoxColumn13.Name = "comment";
+            gridViewTextBoxColumn13.Width = 90;
             gridViewTextBoxColumn14.DataType = typeof(decimal);
-            gridViewTextBoxColumn14.FieldName = "interestApplied";
+            gridViewTextBoxColumn14.EnableExpressionEditor = false;
+            gridViewTextBoxColumn14.FieldName = "pendingbalance";
             gridViewTextBoxColumn14.FormatString = "{0:N2}";
-            gridViewTextBoxColumn14.HeaderText = "Interest ";
-            gridViewTextBoxColumn14.Name = "interestApplied";
+            gridViewTextBoxColumn14.HeaderText = "Pending Balance";
+            gridViewTextBoxColumn14.Name = "pendingbalance";
             gridViewTextBoxColumn14.ReadOnly = true;
             gridViewTextBoxColumn14.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn14.Width = 70;
+            gridViewTextBoxColumn14.Width = 80;
+            gridViewTextBoxColumn14.WrapText = true;
             gridViewTextBoxColumn15.DataType = typeof(decimal);
-            gridViewTextBoxColumn15.FieldName = "pendingbalancetopay";
+            gridViewTextBoxColumn15.EnableExpressionEditor = false;
+            gridViewTextBoxColumn15.FieldName = "interestApplied";
             gridViewTextBoxColumn15.FormatString = "{0:N2}";
-            gridViewTextBoxColumn15.HeaderText = "Pending Balance To Pay";
-            gridViewTextBoxColumn15.Name = "pendingbalancetopay";
+            gridViewTextBoxColumn15.HeaderText = "Interest ";
+            gridViewTextBoxColumn15.Name = "interestApplied";
             gridViewTextBoxColumn15.ReadOnly = true;
             gridViewTextBoxColumn15.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn15.Width = 110;
-            gridViewTextBoxColumn15.WrapText = true;
-            gridViewTextBoxColumn16.FieldName = "agreementid";
-            gridViewTextBoxColumn16.HeaderText = "agreementid";
-            gridViewTextBoxColumn16.IsVisible = false;
-            gridViewTextBoxColumn16.Name = "agreementid";
-            gridViewTextBoxColumn16.Width = 80;
-            gridViewTextBoxColumn17.FieldName = "CompanyName";
-            gridViewTextBoxColumn17.HeaderText = "Company Name";
-            gridViewTextBoxColumn17.Name = "CompanyName";
-            gridViewTextBoxColumn17.Width = 150;
-            gridViewTextBoxColumn18.FieldName = "Source";
-            gridViewTextBoxColumn18.HeaderText = "Source";
-            gridViewTextBoxColumn18.Name = "Source";
-            gridViewTextBoxColumn18.Width = 125;
-            gridViewTextBoxColumn19.DataType = typeof(decimal);
-            gridViewTextBoxColumn19.FieldName = "PaymentApplied1";
-            gridViewTextBoxColumn19.FormatString = "{0:N2}";
-            gridViewTextBoxColumn19.HeaderText = "Payment Applied1";
-            gridViewTextBoxColumn19.IsVisible = false;
-            gridViewTextBoxColumn19.Name = "PaymentApplied1";
-            gridViewTextBoxColumn19.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            gridViewTextBoxColumn19.Width = 100;
+            gridViewTextBoxColumn15.Width = 70;
+            gridViewTextBoxColumn16.DataType = typeof(decimal);
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "pendingbalancetopay";
+            gridViewTextBoxColumn16.FormatString = "{0:N2}";
+            gridViewTextBoxColumn16.HeaderText = "Pending Balance To Pay";
+            gridViewTextBoxColumn16.Name = "pendingbalancetopay";
+            gridViewTextBoxColumn16.ReadOnly = true;
+            gridViewTextBoxColumn16.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            gridViewTextBoxColumn16.Width = 110;
+            gridViewTextBoxColumn16.WrapText = true;
+            gridViewTextBoxColumn17.EnableExpressionEditor = false;
+            gridViewTextBoxColumn17.FieldName = "agreementid";
+            gridViewTextBoxColumn17.HeaderText = "agreementid";
+            gridViewTextBoxColumn17.IsVisible = false;
+            gridViewTextBoxColumn17.Name = "agreementid";
+            gridViewTextBoxColumn17.Width = 80;
+            gridViewTextBoxColumn18.EnableExpressionEditor = false;
+            gridViewTextBoxColumn18.FieldName = "CompanyName";
+            gridViewTextBoxColumn18.HeaderText = "Company Name";
+            gridViewTextBoxColumn18.Name = "CompanyName";
+            gridViewTextBoxColumn18.Width = 150;
+            gridViewTextBoxColumn19.EnableExpressionEditor = false;
+            gridViewTextBoxColumn19.FieldName = "Source";
+            gridViewTextBoxColumn19.HeaderText = "Source";
+            gridViewTextBoxColumn19.Name = "Source";
+            gridViewTextBoxColumn19.Width = 125;
             gridViewTextBoxColumn20.DataType = typeof(decimal);
-            gridViewTextBoxColumn20.FieldName = "MRToApply";
+            gridViewTextBoxColumn20.EnableExpressionEditor = false;
+            gridViewTextBoxColumn20.FieldName = "PaymentApplied1";
             gridViewTextBoxColumn20.FormatString = "{0:N2}";
-            gridViewTextBoxColumn20.HeaderText = "MR To Apply";
+            gridViewTextBoxColumn20.HeaderText = "Payment Applied1";
             gridViewTextBoxColumn20.IsVisible = false;
-            gridViewTextBoxColumn20.Name = "MRToApply";
+            gridViewTextBoxColumn20.Name = "PaymentApplied1";
             gridViewTextBoxColumn20.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn20.Width = 100;
             gridViewTextBoxColumn21.DataType = typeof(decimal);
-            gridViewTextBoxColumn21.FieldName = "InterestToApply";
+            gridViewTextBoxColumn21.EnableExpressionEditor = false;
+            gridViewTextBoxColumn21.FieldName = "MRToApply";
             gridViewTextBoxColumn21.FormatString = "{0:N2}";
-            gridViewTextBoxColumn21.HeaderText = "Interest To Apply";
+            gridViewTextBoxColumn21.HeaderText = "MR To Apply";
             gridViewTextBoxColumn21.IsVisible = false;
-            gridViewTextBoxColumn21.Name = "InterestToApply";
+            gridViewTextBoxColumn21.Name = "MRToApply";
             gridViewTextBoxColumn21.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn21.Width = 100;
             gridViewTextBoxColumn22.DataType = typeof(decimal);
-            gridViewTextBoxColumn22.FieldName = "topay";
+            gridViewTextBoxColumn22.EnableExpressionEditor = false;
+            gridViewTextBoxColumn22.FieldName = "InterestToApply";
             gridViewTextBoxColumn22.FormatString = "{0:N2}";
-            gridViewTextBoxColumn22.HeaderText = "Amount Paid";
-            gridViewTextBoxColumn22.Name = "AmountPaid";
+            gridViewTextBoxColumn22.HeaderText = "Interest To Apply";
+            gridViewTextBoxColumn22.IsVisible = false;
+            gridViewTextBoxColumn22.Name = "InterestToApply";
+            gridViewTextBoxColumn22.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn22.Width = 100;
-            gridViewTextBoxColumn22.WrapText = true;
-            gridViewTextBoxColumn23.DataType = typeof(int);
-            gridViewTextBoxColumn23.FieldName = "ProcessStatus";
-            gridViewTextBoxColumn23.HeaderText = "ProcessStatus";
-            gridViewTextBoxColumn23.IsVisible = false;
-            gridViewTextBoxColumn23.Name = "ProcessStatus";
+            gridViewTextBoxColumn23.DataType = typeof(decimal);
+            gridViewTextBoxColumn23.EnableExpressionEditor = false;
+            gridViewTextBoxColumn23.FieldName = "topay";
+            gridViewTextBoxColumn23.FormatString = "{0:N2}";
+            gridViewTextBoxColumn23.HeaderText = "Amount Paid";
+            gridViewTextBoxColumn23.Name = "AmountPaid";
             gridViewTextBoxColumn23.Width = 100;
-            gridViewTextBoxColumn24.FieldName = "EvoStatus";
-            gridViewTextBoxColumn24.HeaderText = "Evolution Status";
-            gridViewTextBoxColumn24.Name = "EvoStatus";
-            gridViewTextBoxColumn24.Width = 90;
-            gridViewTextBoxColumn24.WrapText = true;
-            gridViewTextBoxColumn25.FieldName = "EvoStatusID";
-            gridViewTextBoxColumn25.HeaderText = "EvoStatusID";
-            gridViewTextBoxColumn25.IsVisible = false;
-            gridViewTextBoxColumn25.Name = "EvoStatusID";
-            gridViewTextBoxColumn26.FieldName = "UpDown_Grade";
-            gridViewTextBoxColumn26.HeaderText = "Up Down Grade";
-            gridViewTextBoxColumn26.Name = "UpDown_Grade";
-            gridViewTextBoxColumn26.Width = 200;
-            gridViewTextBoxColumn26.WrapText = true;
-            gridViewTextBoxColumn27.FieldName = "contractno1";
-            gridViewTextBoxColumn27.HeaderText = "contractno1";
-            gridViewTextBoxColumn27.IsVisible = false;
-            gridViewTextBoxColumn27.Name = "contractno1";
-            gridViewTextBoxColumn28.FieldName = "Upgrade";
-            gridViewTextBoxColumn28.HeaderText = "Upgrade";
+            gridViewTextBoxColumn23.WrapText = true;
+            gridViewTextBoxColumn24.DataType = typeof(int);
+            gridViewTextBoxColumn24.EnableExpressionEditor = false;
+            gridViewTextBoxColumn24.FieldName = "ProcessStatus";
+            gridViewTextBoxColumn24.HeaderText = "ProcessStatus";
+            gridViewTextBoxColumn24.IsVisible = false;
+            gridViewTextBoxColumn24.Name = "ProcessStatus";
+            gridViewTextBoxColumn24.Width = 100;
+            gridViewTextBoxColumn25.EnableExpressionEditor = false;
+            gridViewTextBoxColumn25.FieldName = "EvoStatus";
+            gridViewTextBoxColumn25.HeaderText = "Evolution Status";
+            gridViewTextBoxColumn25.Name = "EvoStatus";
+            gridViewTextBoxColumn25.Width = 90;
+            gridViewTextBoxColumn25.WrapText = true;
+            gridViewTextBoxColumn26.EnableExpressionEditor = false;
+            gridViewTextBoxColumn26.FieldName = "EvoStatusID";
+            gridViewTextBoxColumn26.HeaderText = "EvoStatusID";
+            gridViewTextBoxColumn26.IsVisible = false;
+            gridViewTextBoxColumn26.Name = "EvoStatusID";
+            gridViewTextBoxColumn27.EnableExpressionEditor = false;
+            gridViewTextBoxColumn27.FieldName = "UpDown_Grade";
+            gridViewTextBoxColumn27.HeaderText = "Up Down Grade";
+            gridViewTextBoxColumn27.Name = "UpDown_Grade";
+            gridViewTextBoxColumn27.Width = 200;
+            gridViewTextBoxColumn27.WrapText = true;
+            gridViewTextBoxColumn28.EnableExpressionEditor = false;
+            gridViewTextBoxColumn28.FieldName = "contractno1";
+            gridViewTextBoxColumn28.HeaderText = "contractno1";
             gridViewTextBoxColumn28.IsVisible = false;
-            gridViewTextBoxColumn28.Name = "Upgrade";
-            gridViewTextBoxColumn29.FieldName = "PayStatus";
-            gridViewTextBoxColumn29.HeaderText = "PayStatus";
+            gridViewTextBoxColumn28.Name = "contractno1";
+            gridViewTextBoxColumn29.EnableExpressionEditor = false;
+            gridViewTextBoxColumn29.FieldName = "Upgrade";
+            gridViewTextBoxColumn29.HeaderText = "Upgrade";
             gridViewTextBoxColumn29.IsVisible = false;
-            gridViewTextBoxColumn29.Name = "PayStatus";
-            gridViewTextBoxColumn30.DataType = typeof(decimal);
-            gridViewTextBoxColumn30.FieldName = "Price1";
-            gridViewTextBoxColumn30.FormatString = "{0:N2}";
-            gridViewTextBoxColumn30.HeaderText = "Price1";
+            gridViewTextBoxColumn29.Name = "Upgrade";
+            gridViewTextBoxColumn30.EnableExpressionEditor = false;
+            gridViewTextBoxColumn30.FieldName = "PayStatus";
+            gridViewTextBoxColumn30.HeaderText = "PayStatus";
             gridViewTextBoxColumn30.IsVisible = false;
-            gridViewTextBoxColumn30.Name = "Price1";
+            gridViewTextBoxColumn30.Name = "PayStatus";
+            gridViewTextBoxColumn31.DataType = typeof(decimal);
+            gridViewTextBoxColumn31.EnableExpressionEditor = false;
+            gridViewTextBoxColumn31.FieldName = "Price1";
+            gridViewTextBoxColumn31.FormatString = "{0:N2}";
+            gridViewTextBoxColumn31.HeaderText = "Price1";
+            gridViewTextBoxColumn31.IsVisible = false;
+            gridViewTextBoxColumn31.Name = "Price1";
             this.TransactionsList.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -420,10 +462,12 @@
             gridViewTextBoxColumn27,
             gridViewTextBoxColumn28,
             gridViewTextBoxColumn29,
-            gridViewTextBoxColumn30});
+            gridViewTextBoxColumn30,
+            gridViewTextBoxColumn31});
             this.TransactionsList.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.TransactionsList.Name = "TransactionsList";
             this.TransactionsList.ReadOnly = true;
+            this.TransactionsList.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.TransactionsList.ShowGroupPanel = false;
             this.TransactionsList.Size = new System.Drawing.Size(1130, 437);
             this.TransactionsList.TabIndex = 1;
@@ -442,49 +486,11 @@
             this.unauthorizeContractToolStripMenuItem,
             this.contractPaymentStatusToolStripMenuItem,
             this.transferUpgradePaymentToolStripMenuItem,
-            this.paymentAdjustmentToolStripMenuItem});
+            this.paymentAdjustmentToolStripMenuItem,
+            this.viewLeadStatusToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(214, 114);
-            // 
-            // viewPaymentToolStripMenuItem
-            // 
-            this.viewPaymentToolStripMenuItem.Image = global::Evolution.Properties.Resources.payment;
-            this.viewPaymentToolStripMenuItem.Name = "viewPaymentToolStripMenuItem";
-            this.viewPaymentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.viewPaymentToolStripMenuItem.Text = "View Payment";
-            this.viewPaymentToolStripMenuItem.Click += new System.EventHandler(this.viewPaymentToolStripMenuItem_Click);
-            // 
-            // unauthorizeContractToolStripMenuItem
-            // 
-            this.unauthorizeContractToolStripMenuItem.Image = global::Evolution.Properties.Resources.stop;
-            this.unauthorizeContractToolStripMenuItem.Name = "unauthorizeContractToolStripMenuItem";
-            this.unauthorizeContractToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.unauthorizeContractToolStripMenuItem.Text = "Unauthorize Contract";
-            this.unauthorizeContractToolStripMenuItem.Click += new System.EventHandler(this.unauthorizeContractToolStripMenuItem_Click);
-            // 
-            // contractPaymentStatusToolStripMenuItem
-            // 
-            this.contractPaymentStatusToolStripMenuItem.Image = global::Evolution.Properties.Resources.payment;
-            this.contractPaymentStatusToolStripMenuItem.Name = "contractPaymentStatusToolStripMenuItem";
-            this.contractPaymentStatusToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.contractPaymentStatusToolStripMenuItem.Text = "Contract Payment Status";
-            this.contractPaymentStatusToolStripMenuItem.Click += new System.EventHandler(this.contractPaymentStatusToolStripMenuItem_Click);
-            // 
-            // transferUpgradePaymentToolStripMenuItem
-            // 
-            this.transferUpgradePaymentToolStripMenuItem.Image = global::Evolution.Properties.Resources.transfer1;
-            this.transferUpgradePaymentToolStripMenuItem.Name = "transferUpgradePaymentToolStripMenuItem";
-            this.transferUpgradePaymentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.transferUpgradePaymentToolStripMenuItem.Text = "Transfer Upgrade Payment";
-            this.transferUpgradePaymentToolStripMenuItem.Click += new System.EventHandler(this.transferUpgradePaymentToolStripMenuItem_Click);
-            // 
-            // paymentAdjustmentToolStripMenuItem
-            // 
-            this.paymentAdjustmentToolStripMenuItem.Image = global::Evolution.Properties.Resources.dinero;
-            this.paymentAdjustmentToolStripMenuItem.Name = "paymentAdjustmentToolStripMenuItem";
-            this.paymentAdjustmentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.paymentAdjustmentToolStripMenuItem.Text = "Payment Adjustment";
-            this.paymentAdjustmentToolStripMenuItem.Click += new System.EventHandler(this.paymentAdjustmentToolStripMenuItem_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(214, 158);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // radGroupBox1
             // 
@@ -499,90 +505,6 @@
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(337, 39);
             this.radGroupBox1.TabIndex = 2;
-            // 
-            // bThird
-            // 
-            this.bThird.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bThird.ForeColor = System.Drawing.Color.Black;
-            this.bThird.Image = global::Evolution.Properties.Resources.export;
-            this.bThird.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bThird.Location = new System.Drawing.Point(88, 4);
-            this.bThird.Name = "bThird";
-            this.bThird.Size = new System.Drawing.Size(77, 30);
-            this.bThird.TabIndex = 3;
-            this.bThird.Text = "To Third";
-            this.bThird.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bThird.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bThird.Click += new System.EventHandler(this.bThird_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).Image = global::Evolution.Properties.Resources.export;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).Text = "To Third";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bThird.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
-            // 
-            // bExit
-            // 
-            this.bExit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bExit.ForeColor = System.Drawing.Color.Black;
-            this.bExit.Image = global::Evolution.Properties.Resources.salir;
-            this.bExit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bExit.Location = new System.Drawing.Point(254, 4);
-            this.bExit.Name = "bExit";
-            this.bExit.Size = new System.Drawing.Size(77, 30);
-            this.bExit.TabIndex = 2;
-            this.bExit.Text = "Exit";
-            this.bExit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bExit.Click += new System.EventHandler(this.bExit_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).Image = global::Evolution.Properties.Resources.salir;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).Text = "Exit";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bExit.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
-            // 
-            // bPrint
-            // 
-            this.bPrint.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bPrint.ForeColor = System.Drawing.Color.Black;
-            this.bPrint.Image = global::Evolution.Properties.Resources.excel;
-            this.bPrint.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bPrint.Location = new System.Drawing.Point(171, 4);
-            this.bPrint.Name = "bPrint";
-            this.bPrint.Size = new System.Drawing.Size(77, 30);
-            this.bPrint.TabIndex = 1;
-            this.bPrint.Text = "Export";
-            this.bPrint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bPrint.Click += new System.EventHandler(this.bPrint_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).Image = global::Evolution.Properties.Resources.excel;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).Text = "Export";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bPrint.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
-            // 
-            // bProccess
-            // 
-            this.bProccess.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bProccess.ForeColor = System.Drawing.Color.Black;
-            this.bProccess.Image = global::Evolution.Properties.Resources.process;
-            this.bProccess.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bProccess.Location = new System.Drawing.Point(5, 4);
-            this.bProccess.Name = "bProccess";
-            this.bProccess.Size = new System.Drawing.Size(77, 30);
-            this.bProccess.TabIndex = 0;
-            this.bProccess.Text = "Process";
-            this.bProccess.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bProccess.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bProccess.Click += new System.EventHandler(this.bProccess_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).Image = global::Evolution.Properties.Resources.process;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).Text = "Process";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bProccess.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
             // radGroupBox3
             // 
@@ -853,6 +775,91 @@
             this.SalesfloorID.ThemeName = "Breeze";
             this.SalesfloorID.TextChanged += new System.EventHandler(this.SalesfloorID_TextChanged);
             // 
+            // Companylist
+            // 
+            this.Companylist.AutoSize = false;
+            this.Companylist.DropDownAnimationEnabled = true;
+            this.Companylist.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
+            this.Companylist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Companylist.Location = new System.Drawing.Point(520, 11);
+            this.Companylist.Name = "Companylist";
+            this.Companylist.NullText = "Company Name";
+            this.Companylist.Size = new System.Drawing.Size(166, 28);
+            this.Companylist.TabIndex = 0;
+            this.Companylist.ThemeName = "Breeze";
+            this.Companylist.SelectedValueChanged += new System.EventHandler(this.Companylist_SelectedValueChanged);
+            // 
+            // AgreementIDView
+            // 
+            this.AgreementIDView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AgreementIDView.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgreementIDView.ForeColor = System.Drawing.Color.Gray;
+            this.AgreementIDView.Location = new System.Drawing.Point(703, 574);
+            this.AgreementIDView.Name = "AgreementIDView";
+            this.AgreementIDView.Size = new System.Drawing.Size(16, 21);
+            this.AgreementIDView.TabIndex = 20;
+            this.AgreementIDView.Text = "...";
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
+            // ExcludePaid
+            // 
+            this.ExcludePaid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExcludePaid.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExcludePaid.Location = new System.Drawing.Point(800, 536);
+            this.ExcludePaid.Name = "ExcludePaid";
+            this.ExcludePaid.Size = new System.Drawing.Size(167, 18);
+            this.ExcludePaid.TabIndex = 21;
+            this.ExcludePaid.Text = "Exclude Paid in Exportation";
+            this.ExcludePaid.Click += new System.EventHandler(this.ExcludePaid_Click);
+            // 
+            // ExcludeCanceled
+            // 
+            this.ExcludeCanceled.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExcludeCanceled.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExcludeCanceled.Location = new System.Drawing.Point(968, 536);
+            this.ExcludeCanceled.Name = "ExcludeCanceled";
+            this.ExcludeCanceled.Size = new System.Drawing.Size(152, 18);
+            this.ExcludeCanceled.TabIndex = 22;
+            this.ExcludeCanceled.Text = "Exclude Canceled or Null";
+            this.ExcludeCanceled.Click += new System.EventHandler(this.ExcludeCanceled_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Evolution.Properties.Resources.pleasewait;
+            this.pictureBox1.Location = new System.Drawing.Point(886, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // bImport
+            // 
+            this.bImport.Enabled = false;
+            this.bImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bImport.ForeColor = System.Drawing.Color.Black;
+            this.bImport.Image = global::Evolution.Properties.Resources.excel;
+            this.bImport.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bImport.Location = new System.Drawing.Point(968, 36);
+            this.bImport.Name = "bImport";
+            this.bImport.Size = new System.Drawing.Size(77, 17);
+            this.bImport.TabIndex = 18;
+            this.bImport.Text = "Import";
+            this.bImport.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bImport.Visible = false;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).Image = global::Evolution.Properties.Resources.excel;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).Text = "Import";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bImport.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
+            // 
             // Btnclear
             // 
             this.Btnclear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -895,89 +902,138 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).Text = "Search";
             ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bSearch.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // Companylist
+            // bThird
             // 
-            this.Companylist.AutoSize = false;
-            this.Companylist.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
-            this.Companylist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Companylist.Location = new System.Drawing.Point(520, 11);
-            this.Companylist.Name = "Companylist";
-            this.Companylist.NullText = "Company Name";
-            this.Companylist.Size = new System.Drawing.Size(166, 28);
-            this.Companylist.TabIndex = 0;
-            this.Companylist.ThemeName = "Breeze";
-            this.Companylist.SelectedValueChanged += new System.EventHandler(this.Companylist_SelectedValueChanged);
+            this.bThird.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bThird.ForeColor = System.Drawing.Color.Black;
+            this.bThird.Image = global::Evolution.Properties.Resources.export;
+            this.bThird.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bThird.Location = new System.Drawing.Point(88, 4);
+            this.bThird.Name = "bThird";
+            this.bThird.Size = new System.Drawing.Size(77, 30);
+            this.bThird.TabIndex = 3;
+            this.bThird.Text = "To Third";
+            this.bThird.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bThird.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bThird.Click += new System.EventHandler(this.bThird_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).Image = global::Evolution.Properties.Resources.export;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bThird.GetChildAt(0))).Text = "To Third";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bThird.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // pictureBox1
+            // bExit
             // 
-            this.pictureBox1.Image = global::Evolution.Properties.Resources.pleasewait;
-            this.pictureBox1.Location = new System.Drawing.Point(886, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            this.bExit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bExit.ForeColor = System.Drawing.Color.Black;
+            this.bExit.Image = global::Evolution.Properties.Resources.salir;
+            this.bExit.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bExit.Location = new System.Drawing.Point(254, 4);
+            this.bExit.Name = "bExit";
+            this.bExit.Size = new System.Drawing.Size(77, 30);
+            this.bExit.TabIndex = 2;
+            this.bExit.Text = "Exit";
+            this.bExit.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bExit.Click += new System.EventHandler(this.bExit_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).Image = global::Evolution.Properties.Resources.salir;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bExit.GetChildAt(0))).Text = "Exit";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bExit.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // bImport
+            // bPrint
             // 
-            this.bImport.Enabled = false;
-            this.bImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bImport.ForeColor = System.Drawing.Color.Black;
-            this.bImport.Image = global::Evolution.Properties.Resources.excel;
-            this.bImport.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bImport.Location = new System.Drawing.Point(968, 36);
-            this.bImport.Name = "bImport";
-            this.bImport.Size = new System.Drawing.Size(77, 17);
-            this.bImport.TabIndex = 18;
-            this.bImport.Text = "Import";
-            this.bImport.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bImport.Visible = false;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).Image = global::Evolution.Properties.Resources.excel;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bImport.GetChildAt(0))).Text = "Import";
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bImport.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
+            this.bPrint.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bPrint.ForeColor = System.Drawing.Color.Black;
+            this.bPrint.Image = global::Evolution.Properties.Resources.excel;
+            this.bPrint.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bPrint.Location = new System.Drawing.Point(171, 4);
+            this.bPrint.Name = "bPrint";
+            this.bPrint.Size = new System.Drawing.Size(77, 30);
+            this.bPrint.TabIndex = 1;
+            this.bPrint.Text = "Export";
+            this.bPrint.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bPrint.Click += new System.EventHandler(this.bPrint_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).Image = global::Evolution.Properties.Resources.excel;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bPrint.GetChildAt(0))).Text = "Export";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bPrint.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // AgreementIDView
+            // bProccess
             // 
-            this.AgreementIDView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AgreementIDView.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgreementIDView.ForeColor = System.Drawing.Color.Gray;
-            this.AgreementIDView.Location = new System.Drawing.Point(703, 574);
-            this.AgreementIDView.Name = "AgreementIDView";
-            this.AgreementIDView.Size = new System.Drawing.Size(16, 21);
-            this.AgreementIDView.TabIndex = 20;
-            this.AgreementIDView.Text = "...";
+            this.bProccess.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bProccess.ForeColor = System.Drawing.Color.Black;
+            this.bProccess.Image = global::Evolution.Properties.Resources.process;
+            this.bProccess.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bProccess.Location = new System.Drawing.Point(5, 4);
+            this.bProccess.Name = "bProccess";
+            this.bProccess.Size = new System.Drawing.Size(77, 30);
+            this.bProccess.TabIndex = 0;
+            this.bProccess.Text = "Process";
+            this.bProccess.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bProccess.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bProccess.Click += new System.EventHandler(this.bProccess_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).Image = global::Evolution.Properties.Resources.process;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bProccess.GetChildAt(0))).Text = "Process";
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bProccess.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // backgroundWorker1
+            // viewPaymentToolStripMenuItem
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            this.viewPaymentToolStripMenuItem.Image = global::Evolution.Properties.Resources.payment;
+            this.viewPaymentToolStripMenuItem.Name = "viewPaymentToolStripMenuItem";
+            this.viewPaymentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.viewPaymentToolStripMenuItem.Text = "View Payment";
+            this.viewPaymentToolStripMenuItem.Click += new System.EventHandler(this.viewPaymentToolStripMenuItem_Click);
             // 
-            // ExcludePaid
+            // unauthorizeContractToolStripMenuItem
             // 
-            this.ExcludePaid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExcludePaid.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExcludePaid.Location = new System.Drawing.Point(800, 536);
-            this.ExcludePaid.Name = "ExcludePaid";
-            this.ExcludePaid.Size = new System.Drawing.Size(167, 18);
-            this.ExcludePaid.TabIndex = 21;
-            this.ExcludePaid.Text = "Exclude Paid in Exportation";
-            this.ExcludePaid.Click += new System.EventHandler(this.ExcludePaid_Click);
+            this.unauthorizeContractToolStripMenuItem.Image = global::Evolution.Properties.Resources.stop;
+            this.unauthorizeContractToolStripMenuItem.Name = "unauthorizeContractToolStripMenuItem";
+            this.unauthorizeContractToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.unauthorizeContractToolStripMenuItem.Text = "Unauthorize Contract";
+            this.unauthorizeContractToolStripMenuItem.Click += new System.EventHandler(this.unauthorizeContractToolStripMenuItem_Click);
             // 
-            // ExcludeCanceled
+            // contractPaymentStatusToolStripMenuItem
             // 
-            this.ExcludeCanceled.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ExcludeCanceled.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExcludeCanceled.Location = new System.Drawing.Point(968, 536);
-            this.ExcludeCanceled.Name = "ExcludeCanceled";
-            this.ExcludeCanceled.Size = new System.Drawing.Size(152, 18);
-            this.ExcludeCanceled.TabIndex = 22;
-            this.ExcludeCanceled.Text = "Exclude Canceled or Null";
-            this.ExcludeCanceled.Click += new System.EventHandler(this.ExcludeCanceled_Click);
+            this.contractPaymentStatusToolStripMenuItem.Image = global::Evolution.Properties.Resources.payment;
+            this.contractPaymentStatusToolStripMenuItem.Name = "contractPaymentStatusToolStripMenuItem";
+            this.contractPaymentStatusToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.contractPaymentStatusToolStripMenuItem.Text = "Contract Payment Status";
+            this.contractPaymentStatusToolStripMenuItem.Click += new System.EventHandler(this.contractPaymentStatusToolStripMenuItem_Click);
+            // 
+            // transferUpgradePaymentToolStripMenuItem
+            // 
+            this.transferUpgradePaymentToolStripMenuItem.Image = global::Evolution.Properties.Resources.transfer1;
+            this.transferUpgradePaymentToolStripMenuItem.Name = "transferUpgradePaymentToolStripMenuItem";
+            this.transferUpgradePaymentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.transferUpgradePaymentToolStripMenuItem.Text = "Transfer Upgrade Payment";
+            this.transferUpgradePaymentToolStripMenuItem.Click += new System.EventHandler(this.transferUpgradePaymentToolStripMenuItem_Click);
+            // 
+            // paymentAdjustmentToolStripMenuItem
+            // 
+            this.paymentAdjustmentToolStripMenuItem.Image = global::Evolution.Properties.Resources.dinero;
+            this.paymentAdjustmentToolStripMenuItem.Name = "paymentAdjustmentToolStripMenuItem";
+            this.paymentAdjustmentToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.paymentAdjustmentToolStripMenuItem.Text = "Payment Adjustment";
+            this.paymentAdjustmentToolStripMenuItem.Click += new System.EventHandler(this.paymentAdjustmentToolStripMenuItem_Click);
+            // 
+            // viewLeadStatusToolStripMenuItem
+            // 
+            this.viewLeadStatusToolStripMenuItem.Image = global::Evolution.Properties.Resources.cash_icon_icons_com_51090;
+            this.viewLeadStatusToolStripMenuItem.Name = "viewLeadStatusToolStripMenuItem";
+            this.viewLeadStatusToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.viewLeadStatusToolStripMenuItem.Text = "Leads and Status";
+            this.viewLeadStatusToolStripMenuItem.Visible = false;
+            this.viewLeadStatusToolStripMenuItem.Click += new System.EventHandler(this.viewLeadStatusToolStripMenuItem_Click);
             // 
             // CommissionReport
             // 
@@ -1012,10 +1068,6 @@
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bThird)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bPrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bProccess)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
             this.radGroupBox3.PerformLayout();
@@ -1044,14 +1096,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.Contract1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PropertyID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SalesfloorID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Btnclear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Companylist)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bImport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgreementIDView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExcludePaid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExcludeCanceled)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bImport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btnclear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bThird)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bProccess)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1106,5 +1162,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Telerik.WinControls.UI.RadCheckBox ExcludePaid;
         private Telerik.WinControls.UI.RadCheckBox ExcludeCanceled;
+        private System.Windows.Forms.ToolStripMenuItem viewLeadStatusToolStripMenuItem;
     }
 }

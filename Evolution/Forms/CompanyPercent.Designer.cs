@@ -95,7 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Sales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartDate)).BeginInit();
-          //  ((System.ComponentModel.ISupportInitialize)(this.CompanyName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompanyName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
@@ -215,7 +215,7 @@
             this.Pay.Location = new System.Drawing.Point(72, 61);
             this.Pay.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.Pay.Name = "Pay";
-            this.Pay.Size = new System.Drawing.Size(26, 28);
+            this.Pay.Size = new System.Drawing.Size(26, 23);
             this.Pay.TabIndex = 51;
             this.Pay.TabStop = false;
             this.Pay.Text = "0";
@@ -228,7 +228,7 @@
             this.FromPercent.Location = new System.Drawing.Point(72, 30);
             this.FromPercent.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.FromPercent.Name = "FromPercent";
-            this.FromPercent.Size = new System.Drawing.Size(25, 28);
+            this.FromPercent.Size = new System.Drawing.Size(25, 23);
             this.FromPercent.TabIndex = 50;
             this.FromPercent.TabStop = false;
             this.FromPercent.Text = "0";
@@ -279,7 +279,7 @@
             this.PayAfter.Location = new System.Drawing.Point(126, 79);
             this.PayAfter.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.PayAfter.Name = "PayAfter";
-            this.PayAfter.Size = new System.Drawing.Size(117, 28);
+            this.PayAfter.Size = new System.Drawing.Size(117, 23);
             this.PayAfter.TabIndex = 50;
             this.PayAfter.TabStop = false;
             this.PayAfter.Text = "0";
@@ -307,12 +307,13 @@
             this.TaxPercent.Enabled = false;
             this.TaxPercent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaxPercent.Location = new System.Drawing.Point(197, 51);
+            this.TaxPercent.Mask = "f";
             this.TaxPercent.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.TaxPercent.Name = "TaxPercent";
-            this.TaxPercent.Size = new System.Drawing.Size(52, 28);
+            this.TaxPercent.Size = new System.Drawing.Size(52, 23);
             this.TaxPercent.TabIndex = 51;
             this.TaxPercent.TabStop = false;
-            this.TaxPercent.Text = "0";
+            this.TaxPercent.Text = "0.00";
             this.TaxPercent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TaxPercent.ThemeName = "Breeze";
             // 
@@ -321,12 +322,13 @@
             this.ClosingPercent.Enabled = false;
             this.ClosingPercent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClosingPercent.Location = new System.Drawing.Point(92, 51);
+            this.ClosingPercent.Mask = "f";
             this.ClosingPercent.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.ClosingPercent.Name = "ClosingPercent";
-            this.ClosingPercent.Size = new System.Drawing.Size(52, 28);
+            this.ClosingPercent.Size = new System.Drawing.Size(52, 23);
             this.ClosingPercent.TabIndex = 50;
             this.ClosingPercent.TabStop = false;
-            this.ClosingPercent.Text = "0";
+            this.ClosingPercent.Text = "0.00";
             this.ClosingPercent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ClosingPercent.ThemeName = "Breeze";
             // 
@@ -345,12 +347,13 @@
             this.Company_Percent.Enabled = false;
             this.Company_Percent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Company_Percent.Location = new System.Drawing.Point(15, 51);
+            this.Company_Percent.Mask = "f";
             this.Company_Percent.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
             this.Company_Percent.Name = "Company_Percent";
-            this.Company_Percent.Size = new System.Drawing.Size(52, 28);
+            this.Company_Percent.Size = new System.Drawing.Size(52, 23);
             this.Company_Percent.TabIndex = 49;
             this.Company_Percent.TabStop = false;
-            this.Company_Percent.Text = "0";
+            this.Company_Percent.Text = "0.00";
             this.Company_Percent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Company_Percent.ThemeName = "Breeze";
             // 
@@ -391,7 +394,7 @@
             this.StartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.StartDate.Location = new System.Drawing.Point(126, 45);
             this.StartDate.Name = "StartDate";
-            this.StartDate.Size = new System.Drawing.Size(117, 28);
+            this.StartDate.Size = new System.Drawing.Size(117, 23);
             this.StartDate.TabIndex = 2;
             this.StartDate.TabStop = false;
             this.StartDate.Text = "7/13/2017";
@@ -403,7 +406,7 @@
             this.CompanyName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CompanyName.Location = new System.Drawing.Point(126, 11);
             this.CompanyName.Name = "CompanyName";
-            this.CompanyName.Size = new System.Drawing.Size(434, 28);
+            this.CompanyName.Size = new System.Drawing.Size(434, 23);
             this.CompanyName.TabIndex = 1;
             this.CompanyName.ThemeName = "Breeze";
             // 

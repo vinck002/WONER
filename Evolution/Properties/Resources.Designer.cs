@@ -83,9 +83,49 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486348532_music_play_pause_control_go_arrow_80458 {
+            get {
+                object obj = ResourceManager.GetObject("1486348532-music-play-pause-control-go-arrow_80458", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486348534_music_pause_stop_control_play_80459 {
+            get {
+                object obj = ResourceManager.GetObject("1486348534-music-pause-stop-control-play_80459", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361__2_ {
             get {
                 object obj = ResourceManager.GetObject("1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1495815224_jd15_84582 {
+            get {
+                object obj = ResourceManager.GetObject("1495815224-jd15_84582", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _checked {
+            get {
+                object obj = ResourceManager.GetObject("checked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +163,26 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_arrows_back_direction_left_navigation_right_icon_123236 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_arrows_back_direction_left_navigation_right_icon_123236", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_arrows_back_direction_left_navigation_right_icon_123237 {
+            get {
+                object obj = ResourceManager.GetObject("arrow_arrows_back_direction_left_navigation_right_icon_123237", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrowreload_flecha_1318 {
             get {
                 object obj = ResourceManager.GetObject("arrowreload_flecha_1318", resourceCulture);
@@ -133,9 +193,49 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_icon_icons_com_74430 {
+            get {
+                object obj = ResourceManager.GetObject("back_icon-icons.com_74430", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BACKGROUND_beta {
             get {
                 object obj = ResourceManager.GetObject("BACKGROUND-beta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cash_icon_icons_com_51090 {
+            get {
+                object obj = ResourceManager.GetObject("cash_icon-icons.com_51090", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cash_payment {
+            get {
+                object obj = ResourceManager.GetObject("cash-payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap continue256_24871 {
+            get {
+                object obj = ResourceManager.GetObject("continue256_24871", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,6 +423,26 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap next__2_ {
+            get {
+                object obj = ResourceManager.GetObject("next (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap next_icon_icons_com_74443 {
+            get {
+                object obj = ResourceManager.GetObject("next_icon-icons.com_74443", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ok {
             get {
                 object obj = ResourceManager.GetObject("ok", resourceCulture);
@@ -493,6 +613,26 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trafficlight_red_40428 {
+            get {
+                object obj = ResourceManager.GetObject("trafficlight-red_40428", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transfer_77884 {
+            get {
+                object obj = ResourceManager.GetObject("transfer_77884", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap transfer1 {
             get {
                 object obj = ResourceManager.GetObject("transfer1", resourceCulture);
@@ -506,6 +646,16 @@ namespace Evolution.Properties {
         internal static System.Drawing.Bitmap undo {
             get {
                 object obj = ResourceManager.GetObject("undo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undo1 {
+            get {
+                object obj = ResourceManager.GetObject("undo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +683,29 @@ namespace Evolution.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap verification {
+            get {
+                object obj = ResourceManager.GetObject("verification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap view {
             get {
                 object obj = ResourceManager.GetObject("view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wiretransfer_99437 {
+            get {
+                object obj = ResourceManager.GetObject("wiretransfer_99437", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -95,14 +95,13 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Wait
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(106, 128);
+            this.ClientSize = new System.Drawing.Size(113, 128);
             this.Controls.Add(this.radLabel1);
             this.Controls.Add(this.radWaitingBar1);
             this.DoubleBuffered = true;

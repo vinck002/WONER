@@ -14,7 +14,7 @@ namespace Evolution.General
     {
         General.Conexion conect = new General.Conexion();
         /*---------------Retornar datos de una consulta------------------------------------------------*/
-        public DataTable   SQLdata(string SQLSTR)
+        public DataTable SQLdata(string SQLSTR)
         {
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter();

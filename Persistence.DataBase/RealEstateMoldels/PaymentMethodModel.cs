@@ -14,5 +14,6 @@ namespace Persistence.DataBase.RealEstateMoldels
       public string  Description { get; set; }
       public int Active { get; set; }
 
+
     }
 }

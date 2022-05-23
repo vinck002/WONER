@@ -11,14 +11,13 @@ namespace Persistence.DataBase.RealEstateMoldels
     {
         [Key]
         public Int64 RealEstateContactInfoID { get; set; }
-        public string Phone { get; set; }
+        public string Description { get; set; }
         public int Extension { get; set; }
-        public string Email { get; set; }
         public int Status { get; set; }
         
 
-        public int RealEstatePhoneTypeID { get; set; }
-        public RealEstatePhoneTypeModel RealEstatePhoneType { get; set; }
+        public int RealEstateContactTypeID { get; set; }
+        public RealEstateContactTypeModel RealEstateContactType { get; set; }
    
 
         public Int64 RealEstateRegistryID { get; set; }

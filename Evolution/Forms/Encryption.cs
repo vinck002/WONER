@@ -86,7 +86,7 @@ namespace Evolution.Forms
             /*-------------------------------------------------*/
             int X;
             string temp = "", HexByte="";
-            for (X=1; X<= datos.Length; X++)
+            for (X=1; X <= datos.Length; X++)
             {
                 HexByte = datos.Substring(X,2);
                // MessageBox.Show(char.ConvertFromUtf32(int.Parse(HexByte)));

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Text;
 
 namespace OwnerDataExt
@@ -7,9 +8,9 @@ namespace OwnerDataExt
     public class Connection
     {
         string cadenaDemo = @"Data Source=192.168.210.9;Initial Catalog=Ownerdemo;User ID=Demo;Password=Demo2021; TrustServerCertificate=True";
-        private string connectionString = "RABhAHQAYQAgAFMAbwB1AHIAYwBlAD0AMQA5ADIALgAxADYAOAAuADIAMQAwAC4AOQA7AEkAbgBpAHQAaQBhAGwAIABDAGEAdABhAGwAbwBnAD0ATwB3AG4AZQByADsAVQBzAGUAcgAgAEkARAA9AHMAYQA7AFAAYQBzAHMAdwBvAHIAZAA9AGQAYgBFAHYAMgAwADkAOAA=";
+        private string connectionString = ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString.ToString();
         private string cadenaCon;
-        public Connection(bool Swithdemo  = true)
+        public Connection(bool Swithdemo = true)
         {
             //Globalvariables global = new Globalvariables();
             if (Swithdemo)
@@ -18,23 +19,31 @@ namespace OwnerDataExt
             }
             else
             {
-                cadenaCon = CadenaConexion();
-                
+                cadenaCon = DesEncript(connectionString);
+
             }
-            
 
         }
         public string GetConection { get { return cadenaCon; } }
-        private string CadenaConexion()
+
+        //public string Encript(string _cadenaAencriptar)
+        //{
+        //    string result = string.Empty;
+        //    byte[] encryted = Encoding.Unicode.GetBytes(_cadenaAencriptar);
+        //    result = Convert.ToBase64String(encryted);
+        //    return result;
+        //}
+
+        /// Esta función desencripta la cadena que le envíamos en el parámentro de entrada.
+        public string DesEncript(string _cadenaAdesencriptar)
         {
-           
-                byte[] decryted = Convert.FromBase64String(connectionString);
-
-                string sqlstring = Encoding.Unicode.GetString(decryted);
-
-                return sqlstring;
-            
-
+            string result = string.Empty;
+            byte[] decryted = Convert.FromBase64String(_cadenaAdesencriptar);
+            result = Encoding.Unicode.GetString(decryted);
+            return result;
         }
+
+
+
     }
 }

@@ -105,7 +105,7 @@ namespace Evolution
             //
             Conexion con = new Conexion();
             
-            if (con.Swithdemo == true)
+            if (Program.SwichDemo == true)
             {
                 if (e.KeyData == Keys.F1)
                 {

@@ -2,14 +2,25 @@
 //using Persistence.DataBase.Moldels;
 using Persistence.DataBase.RealEstateMoldels;
 using Persistence.DataBase.RealEstateMoldels.Dto;
+using Persistence.DataBase.Web;
+using Services.RealEstate.Owner.Dto;
 
 namespace OwnerDataExt
 {
     public class OwneDbContext : DbContext
     {
         string StringConnection;
+       
+        
+        public DbSet<RealEstateFPaymentPlanModel> RealEstateFPaymentPlan { get; set; }
+        public DbSet<RealEstatePmtTransactionModel> RealEstatePmtTransaction { get; set; }
+        //public DbSet<RealEstateFPaymentMadeModel> RealEstateFPaymentMade { get; set; }
 
-        public virtual DbSet<Prop_Proj_Loc_Dto> Prop_Proj_Loc_Dto { get; set; }
+        public DbSet<CurrencyRatedModel> CurrencyRate { get; set; }
+        public virtual DbSet<RealEstateProcessContractDto> RealEstateProcessContractDto { get; set; }
+        public virtual DbSet<OwnerInfoDto> OwnerInfoDto { get; set; }
+        public virtual DbSet<UserModel> Users { get; set; }
+        public DbSet<RealEstateHoldInstallment> RealEstateHoldInstallment { get; set; }
         public DbSet<RealEstatePaymentFrecuencyModel> RealEstatePaymentFrecuency { get; set; }
         public DbSet<RealEstatePropertyModel> RealEstateProperty { get; set; }
         public DbSet<RealEstateLocationModel> RealEstateLocation { get; set; }
@@ -19,23 +30,22 @@ namespace OwnerDataExt
 
         public DbSet<PaymentMethodModel> PaymentMethod { get; set; }
         public DbSet<RealEstateRegistryModel> RealEstateRegistry { get; set; }
-        public DbSet<RealEstatePropertyOBenefitModel> RealEstatePropertyOBenefit{ get; set; }
 
         public DbSet<RealEstateContactInfoModel> RealEstateContactInfo { get; set; }
-        public DbSet<RealEstatePhoneTypeModel> RealEstatePhoneType { get; set; }
-        public DbSet<RealEstateBanksTransferenceModel> RealEstateBanksTransference { get; set; }
+        public DbSet<RealEstateContactTypeModel> RealEstateContactType { get; set; }
+        public DbSet<RealEstateBankTranferenceModel> RealEstateBanksTransference { get; set; }
         public DbSet<RealEstatedBankModel> RealEstatedBank { get; set; }
         public DbSet<RealEstateRegOwneInfoModel> RealEstateRegOwneInfo { get; set; }
         public DbSet<RealEstateAnualBenefitModel> RealEstateAnualBenefit { get; set; }
         public DbSet<RealEstateTransactionTypeModel> RealEstateTransactionType { get; set; }
 
-
+        public DbSet<RealEstateConfig> RealEstateConfig { get; set; }
 
         public DbSet<RealEstateTransactionModel> RealEstateTransaction { get; set; }
-        public DbSet<RealStateDocumentsModel> RealStateDocuments { get; set; }
+        public DbSet<RealEstateDocumentsModel> RealEstateDocuments { get; set; }
 
-        public DbSet<RealStateDocumentsTypeModel> RealStateDocumentsType { get; set; }
-        public DbSet<RealEstateDocumentSource> RealEstateDocumentSource { get; set; }
+        //public DbSet<RealEstateDocumentsTypeModel> RealEstateDocumentsType { get; set; }
+        //public DbSet<RealEstateDocumentSource> RealEstateDocumentSource { get; set; }
 
 
         public DbSet<RealEstatePaymentHistoryModel> RealEstatePaymentHistory { get; set; }
@@ -44,7 +54,8 @@ namespace OwnerDataExt
 
         public OwneDbContext()
         {
-            Connection con = new Connection(true);
+            
+            Connection con = new Connection(false); //true para trabajar en DEMO, false= Live
             StringConnection = con.GetConection;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -53,25 +64,28 @@ namespace OwnerDataExt
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Prop_Proj_Loc_Dto>().HasNoKey();
-            //modelBuilder.Entity<RealEstatePropertyTypeModel>()
-            //.HasOne<RealEstateProjectTypeModel>(prot => prot.RealEstateProjectType)
-            //.WithMany(pjt => pjt.RealEstatePropertyType)
-            //.HasForeignKey(prot => prot.RealEstateProjectTypeID);
+            modelBuilder.Entity<OwnerInfoDto>().HasNoKey();
+            modelBuilder.Entity<RealEstateProcessContractDto>().HasNoKey();
 
-            modelBuilder.Entity<RealEstatePropertyOBenefitModel>().HasKey(pr => new { pr.RealEstateAnualBenefitID, pr.RealEstatePropertyID });
+            //modelBuilder.Entity<RealEstatePropertyOBenefitModel>().HasKey(pr => new { pr.RealEstateAnualBenefitID, pr.RealEstatePropertyID });
+
+            //modelBuilder.Entity<RealEstatePropertyOBenefitModel>()
+            //               .HasOne<RealEstateAnualBenefitModel>(pr => pr.RealEstateAnualBenefit)
+            //               .WithMany(p => p.RealEstatePropertyOBenefit)
+            //               .HasForeignKey(pr => pr.RealEstateAnualBenefitID);
 
 
-        //    modelBuilder.Entity<RealEstatePropertyOBenefitModel>()
-        //        .HasOne<RealEstatePropertyModel>(pr => pr.RealEstateProperty)
-        //        .WithMany(p => p.RealEstatePropertyOBenefit)
-        //        .HasForeignKey(pr => pr.RealEstatePropertyID);
+            //modelBuilder.Entity<RealEstateAnualBenefitModel>()
+            //    .HasOne<UserModel>(usr => usr.User)
+            //    .WithMany(f => f.RealEstateAnualBenefit)
+            //    .HasForeignKey(k => k.UserId);
 
-        //    modelBuilder.Entity<RealEstatePropertyOBenefitModel>()
-        //                   .HasOne<RealEstateAnualBenefitModel>(pr => pr.RealEstateAnualBenefit)
-        //                   .WithMany(p => p.RealEstatePropertyOBenefit)
-        //                   .HasForeignKey(pr => pr.RealEstateAnualBenefitID);
-       }
+            //modelBuilder.Entity<RealEstatePropertyModel>()
+            //.HasOne<RealEstateLocationModel>(l => l.RealEstateLocation)
+            //.WithMany(g => g.RealEstateProperty)
+            //.HasForeignKey(s => s.RealEstateLocationID);
+
+        }
 
 
     }

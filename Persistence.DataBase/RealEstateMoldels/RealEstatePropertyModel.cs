@@ -16,7 +16,7 @@ namespace Persistence.DataBase.RealEstateMoldels
         public int RealEstatePropertyTypeID { get; set; }
         public RealEstatePropertyTypeModel RealEstatePropertyType { get; set; }
        
-        public IList<RealEstatePropertyOBenefitModel> RealEstatePropertyOBenefit { get; set; }
+        //public IList<RealEstatePropertyOBenefitModel> RealEstatePropertyOBenefit { get; set; }
 
 
 

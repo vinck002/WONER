@@ -10,7 +10,10 @@ using System.Windows.Forms;
 using Telerik.Collections.Generic;
 using Telerik.WinControls.UI;
 using System.Reflection;
-
+using Services;
+using Ninject;
+using Services.Web;
+using Persistence.DataBase.Web;
 
 namespace Evolution.Forms
 {
@@ -21,10 +24,35 @@ namespace Evolution.Forms
         DataView DVTransfer = new DataView();
         General.Sqlcommandexecuter Sqlcmd = new General.Sqlcommandexecuter();
         bool CloseForm = false;
+        public CurrencyRatedModel ActualCurrencyRate;
         public Mainmenu()
         {
             InitializeComponent();
+            //LoadCurrency();
+      
+            
         }
+        //async void LoadCurrency()
+        //{
+        //    try
+        //    {
+        //        IUSDRate _IUSDRate = new USDRate();
+        //        CurrencyApi currenci = new CurrencyApi(_IUSDRate);
+
+        //        ActualCurrencyRate = await currenci.getCurrencyOthers();
+        //        var BankCurrencyResult = currenci.getCurrencyFromCentralB();
+        //        //UsdMain.Text = BankCurrencyResult.Result.result.actualPurchaseValue.ToString("");
+        //        lblusdToday.Text = ActualCurrencyRate.Price.ToString("C2");
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        MessageBox.Show("the rate of the day will not be displayed");
+        //    }
+           
+     
+        //}
+
 
         private void Mainmenu_Load(object sender, EventArgs e)
         {
@@ -42,7 +70,7 @@ namespace Evolution.Forms
             Login log = new Login();
             if(log.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
             { radStatusStrip1.Visible = false; radRibbonBar1.Visible = false; Application.Exit(); return; }
-            /*------------------*/
+            /*-----------------------------------------------------------------------------------*/
             this.Text = General.Globalvariables.AppName;
             CloseForm = true;
             radStatusStrip1.Visible = true; radRibbonBar1.Visible = true;

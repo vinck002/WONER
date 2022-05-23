@@ -16,7 +16,7 @@ namespace Persistence.DataBase.RealEstateMoldels
      public int Active { get; set; }
 
      //public ICollection<RealEstateRegistryModel> RealEstateRegistrys { get; set; }
-     //public ICollection<RealEstateAnualBenefitModel> RealEstateAnualBenefit { get; set; }
+     //public RealEstateAnualBenefitModel RealEstateAnualBenefit { get; set; }
 
 
 

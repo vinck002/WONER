@@ -18,14 +18,16 @@ namespace Evolution.General
 
         string xxx = ConfigurationManager.ConnectionStrings["Conexion"].ConnectionString.ToString();
         
-        public bool Swithdemo = true; //Swithdemo: TRUE = DEMO, FALSE= LIVE
+        //public bool Swithdemo = true; //Swithdemo: TRUE = DEMO, FALSE= LIVE
+
         public string Getconection { get; set; }
+
         public Conexion()
         {
             //Globalvariables global = new Globalvariables();
-
             
-            if (Swithdemo)
+            
+            if (Program.SwichDemo)
             {
                 Conexions = new SqlConnection(CadenaConexionDemo);
             }

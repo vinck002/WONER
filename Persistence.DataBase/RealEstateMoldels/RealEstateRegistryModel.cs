@@ -6,6 +6,15 @@ namespace Persistence.DataBase.RealEstateMoldels
 {
     public class RealEstateRegistryModel
     {
+
+        public RealEstateRegistryModel()
+        {
+            RealEstateAnualBenefit = new List<RealEstateAnualBenefitModel>();
+            RealEstateContactInfo = new List<RealEstateContactInfoModel>();
+            RealEstateBanksTransference = new List<RealEstateBankTranferenceModel>();
+            RealEstateRegOwneInfo = new RealEstateRegOwneInfoModel();
+            RealEstateBanksTransference = new List<RealEstateBankTranferenceModel>();
+        }
         [Key]
         public Int64 RealEstateRegistryID { get; set; }
         public string RegistryDescription { get; set; }
@@ -13,23 +22,15 @@ namespace Persistence.DataBase.RealEstateMoldels
         public DateTime CreationDate { get; set; }
         public int Active { get; set; }
         public Int64 UserId { get; set; }
-        //public int RealEstateLocationID { get; set; }
-        //public RealEstateLocationModel RealEstateLocation { get; set; }
 
-        //public ICollection<RealEstateAnualBenefitModel> RealEstateAnualBenefit { get; set; }
-        public PaymentMethodModel PaymentMethod { get; set; }
+        public RealEstateRegOwneInfoModel RealEstateRegOwneInfo { get; set; }
 
-        //public Int64 RealEstatePaymentFrecuencyID { get; set; }
-        //public RealEstatePaymentFrecuencyModel RealEstatePaymentFrecuency { get; set; }
-          
-        
+        public ICollection<RealEstateAnualBenefitModel> RealEstateAnualBenefit{ get; set; }
         public ICollection<RealEstateContactInfoModel> RealEstateContactInfo { get; set; }
 
-        public ICollection<RealEstateTransactionModel> RealEstateTransaction { get; set; }
-        public ICollection<RealEstatePaymentHistoryModel> RealEstatePaymentHistory { get; set; }
-        public ICollection<RealEstateRegOwneInfoModel> RealEstateRegOwneInfo { get; set; }
-        public ICollection<RealEstateBanksTransferenceModel> RealEstateBanksTransference { get; set; }
-        public ICollection<RealStateDocumentsModel> RealStateDocuments { get; set; }
+        public ICollection<RealEstateBankTranferenceModel> RealEstateBanksTransference { get; set; }
+        
+        
 
 
 

@@ -9,10 +9,10 @@ namespace Persistence.DataBase.RealEstateMoldels.Dto
     
     public class Prop_Proj_Loc_Dto
     {
-        public IList<RealEstateLocationModel> lstRealEstateLocation { get; set; }
-        public IList<RealEstatePropertyModel> lstRealEstateProperty { get; set; }
-        public  IList<RealEstatePropertyTypeModel> lstRealEstatePropertyType { get; set; }
-        public  IList<RealEstateProjectTypeModel> lstRealEstateProjectType { get; set; }
+        //public IList<RealEstateLocationModel> lstRealEstateLocation { get; set; }
+        //public IList<RealEstatePropertyModel> lstRealEstateProperty { get; set; }
+        //public  IList<RealEstatePropertyTypeModel> lstRealEstatePropertyType { get; set; }
+        //public  IList<RealEstateProjectTypeModel> lstRealEstateProjectType { get; set; }
         
         
        

@@ -188,6 +188,10 @@
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="RadControlSpy, Version=2021.2.615.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2021.2.615.40\RadControlSpy.dll</HintPath>
       <Private>True</Private>
@@ -300,6 +304,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -443,6 +448,51 @@
     <Compile Include="Forms\BonusTemplate.Designer.cs">
       <DependentUpon>BonusTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormControlTools\MainControls.cs" />
+    <Compile Include="Forms\LeadStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LeadStatus.Designer.cs">
+      <DependentUpon>LeadStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListPaidLead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListPaidLead.Designer.cs">
+      <DependentUpon>ListPaidLead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\ControlsFuntions\FormControl.cs" />
+    <Compile Include="Forms\RealEstate\ControlsFuntions\Functions.cs" />
+    <Compile Include="Forms\RealEstate\FPaymetntSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FPaymetntSelection.Designer.cs">
+      <DependentUpon>FPaymetntSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FrmAuthorizationkey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FrmAuthorizationkey.Designer.cs">
+      <DependentUpon>FrmAuthorizationkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\PaymentWtInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\PaymentWtInfo.Designer.cs">
+      <DependentUpon>PaymentWtInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateProcessContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateProcessContract.Designer.cs">
+      <DependentUpon>RealEstateProcessContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateProcessPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\RealEstateProcessPayment.Designer.cs">
+      <DependentUpon>RealEstateProcessPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RealEstate\RealEstatePropertyModal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -454,6 +504,14 @@
     </Compile>
     <Compile Include="Forms\RealEstate\RealEstateRegistry.Designer.cs">
       <DependentUpon>RealEstateRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\Registry\IOwnerRegistryInfo.cs" />
+    <Compile Include="Forms\RealEstate\Registry\IPropertyBenefit.cs" />
+    <Compile Include="Forms\RealEstate\SearchRealEstate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\SearchRealEstate.Designer.cs">
+      <DependentUpon>SearchRealEstate.cs</DependentUpon>
     </Compile>
     <Compile Include="General\BonusTemplateExport\BonusTemplateExports.cs" />
     <Compile Include="Forms\CancellationNC.cs">
@@ -845,6 +903,7 @@
     <Compile Include="General\GlobalAccess.cs" />
     <Compile Include="General\GridViewFilter.cs" />
     <Compile Include="General\OpenExcelFile.cs" />
+    <Compile Include="General\RealEstateData\ExportRaelEstatePayment.cs" />
     <Compile Include="General\ReportProvisionOwner.cs" />
     <Compile Include="General\ReportToOwnerFeeComisionExp.cs" />
     <Compile Include="General\ReportToThird.cs" />
@@ -1042,6 +1101,12 @@
     <EmbeddedResource Include="Forms\ImportContract.resx">
       <DependentUpon>ImportContract.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LeadStatus.resx">
+      <DependentUpon>LeadStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListPaidLead.resx">
+      <DependentUpon>ListPaidLead.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MemberCommision.resx">
       <DependentUpon>MemberCommision.cs</DependentUpon>
     </EmbeddedResource>
@@ -1099,11 +1164,29 @@
     <EmbeddedResource Include="Forms\ProcessedCommissionPenderToPay.resx">
       <DependentUpon>ProcessedCommissionPenderToPay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\FPaymetntSelection.resx">
+      <DependentUpon>FPaymetntSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\FrmAuthorizationkey.resx">
+      <DependentUpon>FrmAuthorizationkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\PaymentWtInfo.resx">
+      <DependentUpon>PaymentWtInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\RealEstateProcessContract.resx">
+      <DependentUpon>RealEstateProcessContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\RealEstateProcessPayment.resx">
+      <DependentUpon>RealEstateProcessPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RealEstate\RealEstatePropertyModal.resx">
       <DependentUpon>RealEstatePropertyModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RealEstate\RealEstateRegistry.resx">
       <DependentUpon>RealEstateRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealEstate\SearchRealEstate.resx">
+      <DependentUpon>SearchRealEstate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RealStateFeeGeneration.resx">
       <DependentUpon>RealStateFeeGeneration.cs</DependentUpon>
@@ -1253,6 +1336,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hotel.ico" />
+    <None Include="Resources\verification.png" />
+    <None Include="Resources\cash-payment.png" />
+    <None Include="Resources\undo1.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\cash_icon-icons.com_51090.png" />
+    <None Include="Resources\trafficlight-red_40428.png" />
+    <None Include="Resources\1495815224-jd15_84582.png" />
+    <None Include="Resources\wiretransfer_99437.png" />
+    <None Include="Resources\transfer_77884.ico" />
+    <None Include="Resources\continue256_24871.png" />
+    <None Include="Resources\1486348534-music-pause-stop-control-play_80459.png" />
+    <None Include="Resources\1486348532-music-play-pause-control-go-arrow_80458.png" />
+    <None Include="Resources\next_icon-icons.com_74443.png" />
+    <None Include="Resources\back_icon-icons.com_74430.png" />
+    <None Include="Resources\arrow_arrows_back_direction_left_navigation_right_icon_123236.png" />
+    <None Include="Resources\arrow_arrows_back_direction_left_navigation_right_icon_123237.png" />
+    <None Include="Resources\next %282%29.png" />
     <None Include="Resources\reload1_78509.png" />
     <None Include="Resources\arrowreload_flecha_1318.png" />
     <None Include="Resources\search_home_house_real_estate_icon_150332.png" />

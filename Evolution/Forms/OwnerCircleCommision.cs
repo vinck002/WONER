@@ -23,6 +23,7 @@ namespace Evolution.Forms
         DataView DVSave = new DataView();
         DataView DV = new DataView();
         Boolean EditServiceFee = false, AllowPreviousPeriod = false;
+        private Int64 MemberServiceFeePaymentID;
         private void bExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -32,7 +33,7 @@ namespace Evolution.Forms
         {
             try
             {
-                DVSearch = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L 1,"+SalesfloorID.Text.Trim()+",'"+ PropertyID.Text.Trim() + "',"+MemberAgreementNo.Text.Trim()+","+((Sequence.Text.Trim()=="")? "null" : Sequence.Text.Trim())+"").DefaultView;
+                DVSearch = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L_v1 1,"+SalesfloorID.Text.Trim()+",'"+ PropertyID.Text.Trim() + "',"+MemberAgreementNo.Text.Trim()+","+((Sequence.Text.Trim()=="")? "null" : Sequence.Text.Trim())+"").DefaultView;
                 if(DVSearch.Count > 0) { FillGrid(); FillGridBankInfo(); }
                 
             }
@@ -60,11 +61,13 @@ namespace Evolution.Forms
                 DVHistiry.RowFilter = String.Format("agreementid=0"); SumNight();  DV.RowFilter="BankName='xx'";
                 goto Proximo;
             }
+            //MemberServiceFeePaymentID = Convert.ToInt64(DVSearch.Table.Rows[0]["MemberServiceFeePaymentID"].ToString());
             GRDHistory.DataSource = DVHistiry;
             WeekPeriod.Text = DVSearch.Table.Rows[0]["WeekPeriod"].ToString();
             lblEvoStatus.Text = DVSearch.Table.Rows[0]["EvoStatus"].ToString();
             ServiceFeeAmount.Text = DVSearch.Table.Rows[0]["ServiceFee"].ToString();
             MemberName.Text  = DVSearch.Table.Rows[0]["MemberName"].ToString();
+
             ClearDateRange();
             /*--------------------------------------*/
             GRDHistory.DataSource = DVHistiry;
@@ -202,13 +205,19 @@ namespace Evolution.Forms
             {
                 DVSave = SQLCMD.SQLdata("LS_MemberServiceFeePaymentDetail_ML 1,0,0,'" + StartDate.Value + "','" + EndDate.Value + "'," + DVSearch.Table.Rows[0]["AgreementID"].ToString() + "," +
                    DVSearch.Table.Rows[0]["CompanyPercentID"].ToString() + ",0").DefaultView;
+                
                 if (DVSave.Table.Rows[0]["Result"].ToString() != "0") { MessageBox.Show(DVSave.Table.Rows[0]["Result"].ToString(), "Owner", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
                 /*------------------Guardar si no existe el periodo en la DB-------------------------------------------------------------------------------------*/
-                DVSave = SQLCMD.SQLdata("LS_MemberServiceFeePaymentDetail_ML 0,0,0,'" + StartDate.Value + "','" + EndDate.Value + "'," + DVSearch.Table.Rows[0]["AgreementID"].ToString() + "," +
+                DVSave = SQLCMD.SQLdata($"LS_MemberServiceFeePaymentDetail_ML 0,0,0,'" + StartDate.Value + "','" + EndDate.Value + "'," + DVSearch.Table.Rows[0]["AgreementID"].ToString() + "," +
                   DVSearch.Table.Rows[0]["CompanyPercentID"].ToString() + "," + General.Globalvariables.guserid + ","+
                   decimal.Parse(ServiceFeeAmount.Text) +",'" + Reference.Text.Trim().Replace("'", "''") + "','" + RequestDate.Value + "',0," +
                   ((ckbTransfer.CheckState == CheckState.Checked)? 1 : 2) +","+((ddlNCType.Text=="" || ddlNCType.SelectedValue ==null)? "Null" : ddlNCType.SelectedValue)+"").DefaultView;
                 /*-----------------------------------------*/
+                //if (DVSave.Table.Rows[0][0].ToString() != "0" )
+                //{
+                //    MemberServiceFeePaymentID =Convert.ToInt64(DVSave.Table.Rows[0].Field<string>("Result").First().ToString());
+                //}
+                
                 FillGrid();
                 GRDHistory.DataSource = DVHistiry;
                 SumNight();
@@ -320,11 +329,12 @@ namespace Evolution.Forms
             }
 
             if (DVSearch.Count < 1) { return; }
-            DVSave = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L 2,null,null,null,null,"+DVSearch.Table.Rows[0]["Agreementid"].ToString()+",null,1,9999999999,'01-01-1990','01-01-3000',"+BankTransferenceID + " ").DefaultView;
+            DVSave = SQLCMD.SQLdata("LS_MemberServiceFeeSearch_L_v1 2,null,null,null,null,"+DVSearch.Table.Rows[0]["Agreementid"].ToString()+",null,1,9999999999,'01-01-1990','01-01-3000',"+BankTransferenceID + " ").DefaultView;
+            
             ReportViewer repo = new ReportViewer();
             string path = "Reports\\OCPaymentReport.rpt";
             repo.reportpath = path;
-            repo.Inforeport = DVSave;
+            repo.Inforeport = DVSave.Table.AsEnumerable().Where(x => x.Field<Int64>("ProcessStatus") == 0).AsDataView();
             repo.Exportar = false;
             repo.ShowDialog();
 

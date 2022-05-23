@@ -25,7 +25,7 @@ namespace Evolution.Forms
         private void bOk_Click(object sender, EventArgs e)
         {
             if (Userpassword.Text.Trim() == "") { MessageBox.Show("Please Type Your Password", "OWNER", MessageBoxButtons.OK, MessageBoxIcon.Warning); Userpassword.Focus(); return; }
-            if (General.Globalvariables.UserPassword == Userpassword.Text.Trim())
+            if (General.Globalvariables.UserPassword.ToUpper() == Userpassword.Text.Trim().ToUpper())
             {
                 DialogResult = DialogResult.OK;
             }

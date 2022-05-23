@@ -13,6 +13,6 @@ namespace Persistence.DataBase.RealEstateMoldels
         public int RealEstateDocumentSourceID { get; set; }
         public string Description { get; set; }
         public int Active { get; set; }
-        public ICollection<RealStateDocumentsModel> RealStateDocuments { get; set; }
+        //public ICollection<RealEstateDocumentsModel> RealStateDocuments { get; set; }
     }
 }

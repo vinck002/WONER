@@ -319,14 +319,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Evolution.exe" size="6951936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Evolution.exe" size="7332864">
       <assemblyIdentity name="Evolution" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KPseROzFTQ2ODY97mdG4tQKSIaW7fKyYA9oj7LyVW6o=</dsig:DigestValue>
+        <dsig:DigestValue>+v3kHQsWWqU+dTaKFEw28kJzIxj2skgg36GU/djBgvM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -339,6 +339,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>QZCwLtoaJ4mED5uUimU0ue8ewgrd1BTGdm83fzT8/Oo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="168960">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.11.42.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BCeHDk58ebmG0KCMj+/7EyStcWvgFKgsvKtKgY3Ei5w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -811,14 +823,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Persistence.DataBase.dll" size="124416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ninject.dll" size="138752">
+      <assemblyIdentity name="Ninject" version="3.3.4.0" publicKeyToken="C7192DC5380945E7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AcyAoWMj9WGRWWAT7vHefkMnHW+ZH0dAsfzFGV2Ktb0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Persistence.DataBase.dll" size="55808">
       <assemblyIdentity name="Persistence.DataBase" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cnefICJSl4J5hyOIv56nrAiZ/vMjPsfPpRo5eupaa6U=</dsig:DigestValue>
+        <dsig:DigestValue>V10yw9K1X11KHcc2S3s4uXE0GNI61DIsItIVZhGVq90=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -835,14 +859,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Services.dll" size="8192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Services.dll" size="36864">
       <assemblyIdentity name="Services" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rVfTfAu79NfEcdZNdj6NFIX2a6TC9VBBIWEa/AQdvgE=</dsig:DigestValue>
+        <dsig:DigestValue>TKurbLP8FXHOyNKqrUzgthvxSSimDLksWu+VykQH9Bk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1254,13 +1278,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Evolution.exe.config" size="6604">
+  <file name="Evolution.exe.config" size="8151">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YGeLJ826AsEaunvIzlft2Q4rGevw4JwoxIcYiA7yZ8M=</dsig:DigestValue>
+      <dsig:DigestValue>Y+FrbbJ+c9pnGJPEELVAmfPUosN0jOoP8Zlq05IwtKw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="hotel.ico" size="67646">

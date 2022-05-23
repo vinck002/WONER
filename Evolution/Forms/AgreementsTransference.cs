@@ -167,15 +167,16 @@ namespace Evolution.Forms
                         selected = Contractlist.Rows[record].Cells["select"].Value.ToString();
                         if (selected == "1") 
                         {
-                            agreementid = agreementid +","+ Contractlist.Rows[record].Cells["agreementid"].Value.ToString();
-                           Sqlquery2 = Sqlquery2 + " " + "EXEC LS_OWNERSHIPCONTRACT_M2 0,"+ Contractlist.Rows[record].Cells["agreementid"].Value.ToString() + ","+
+                        agreementid = agreementid +","+ Contractlist.Rows[record].Cells["agreementid"].Value.ToString();
+                        //agreementid =  Contractlist.Rows[record].Cells["agreementid"].Value.ToString();
+                        Sqlquery2 = Sqlquery2 + " " + "EXEC LS_OWNERSHIPCONTRACT_M2 0,"+ Contractlist.Rows[record].Cells["agreementid"].Value.ToString() + ","+
                             General.Globalvariables.guserid +",null,null,'01-01-1990','01-01-3000',null,null";
                         /*-------------------------------------------------------------------------------------------*/
-                      }
-                      else
-                    { 
-                        agreementID1 = agreementID1 + "," + Contractlist.Rows[record].Cells["agreementid"].Value.ToString();
-                      }
+                         }
+                         else
+                         { 
+                              agreementID1 = agreementID1 + "," + Contractlist.Rows[record].Cells["agreementid"].Value.ToString();
+                         }
                     }
                     SqlQuery = "EXEC [0LS_LOAD_COPYCONTRACT_G_2] '" + agreementid + "',null,1";
                  if (agreementid == "0") { MessageBox.Show("No Contracts Selected", "OWNER", MessageBoxButtons.OK, MessageBoxIcon.Warning);  return; }

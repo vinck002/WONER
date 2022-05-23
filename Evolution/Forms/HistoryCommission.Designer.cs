@@ -36,15 +36,16 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistoryCommission));
             this.Transactionlist = new Telerik.WinControls.UI.RadGridView();
             this.radTitleBar1 = new Telerik.WinControls.UI.RadTitleBar();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.bSearch = new Telerik.WinControls.UI.RadButton();
             this.Companylist = new Telerik.WinControls.UI.RadDropDownList();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
+            this.bLeadQ = new Telerik.WinControls.UI.RadRadioButton();
             this.radLabel7 = new Telerik.WinControls.UI.RadLabel();
             this.RealPaymentDate = new Telerik.WinControls.UI.RadDateTimePicker();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
@@ -57,23 +58,28 @@
             this.Amount = new Telerik.WinControls.UI.RadTextBox();
             this.Invoicenumber = new Telerik.WinControls.UI.RadTextBox();
             this.Reference = new Telerik.WinControls.UI.RadTextBox();
-            this.bApply = new Telerik.WinControls.UI.RadButton();
-            this.bExit = new Telerik.WinControls.UI.RadButton();
             this.Sumpaymentmade = new Telerik.WinControls.UI.RadLabel();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
-            this.bUndo = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
+            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
+            this.lblLeadQty = new Telerik.WinControls.UI.RadLabel();
+            this.radLabel10 = new Telerik.WinControls.UI.RadLabel();
+            this.lblTotalLead = new Telerik.WinControls.UI.RadLabel();
+            this.bUndo = new Telerik.WinControls.UI.RadButton();
+            this.bApply = new Telerik.WinControls.UI.RadButton();
+            this.bExit = new Telerik.WinControls.UI.RadButton();
+            this.bSearch = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.Transactionlist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Transactionlist.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTitleBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Companylist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bLeadQ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RealPaymentDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
@@ -86,62 +92,84 @@
             ((System.ComponentModel.ISupportInitialize)(this.Amount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Invoicenumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reference)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bApply)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sumpaymentmade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bUndo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblLeadQty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTotalLead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bUndo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bApply)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // Transactionlist
             // 
-            this.Transactionlist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Transactionlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(248)))));
+            this.Transactionlist.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Transactionlist.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Transactionlist.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Transactionlist.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Transactionlist.Location = new System.Drawing.Point(12, 105);
             // 
             // 
             // 
             this.Transactionlist.MasterTemplate.AllowAddNewRow = false;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FieldName = "Reference";
             gridViewTextBoxColumn1.HeaderText = "Description";
             gridViewTextBoxColumn1.Name = "description";
             gridViewTextBoxColumn1.Width = 170;
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.FieldName = "CreationDate";
             gridViewTextBoxColumn2.HeaderText = "Application Date";
             gridViewTextBoxColumn2.Name = "date";
             gridViewTextBoxColumn2.Width = 100;
             gridViewTextBoxColumn2.WrapText = true;
+            gridViewDateTimeColumn1.EnableExpressionEditor = false;
             gridViewDateTimeColumn1.FieldName = "PaymentDate";
             gridViewDateTimeColumn1.HeaderText = "Real Payment Date";
             gridViewDateTimeColumn1.Name = "PaymentDate";
             gridViewDateTimeColumn1.Width = 100;
             gridViewDateTimeColumn1.WrapText = true;
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.FieldName = "InvoiceNumber";
             gridViewTextBoxColumn3.HeaderText = "Invoice Number";
             gridViewTextBoxColumn3.Name = "number";
             gridViewTextBoxColumn3.Width = 100;
             gridViewTextBoxColumn3.WrapText = true;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
             gridViewTextBoxColumn4.FieldName = "TotalPaymentMade";
             gridViewTextBoxColumn4.FormatString = "{0:N2}";
             gridViewTextBoxColumn4.HeaderText = "Payment Made";
             gridViewTextBoxColumn4.Name = "paymentmade";
             gridViewTextBoxColumn4.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             gridViewTextBoxColumn4.Width = 105;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
             gridViewTextBoxColumn5.FieldName = "CompanyReportHistoryID";
             gridViewTextBoxColumn5.HeaderText = "ID";
             gridViewTextBoxColumn5.IsVisible = false;
             gridViewTextBoxColumn5.Name = "Id";
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
             gridViewTextBoxColumn6.FieldName = "CompanyPercentID";
             gridViewTextBoxColumn6.HeaderText = "CompanyID";
             gridViewTextBoxColumn6.IsVisible = false;
             gridViewTextBoxColumn6.Name = "companyid";
             gridViewTextBoxColumn6.Width = 80;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
             gridViewTextBoxColumn7.FieldName = "CompanyName";
             gridViewTextBoxColumn7.HeaderText = "Company";
             gridViewTextBoxColumn7.Name = "company";
             gridViewTextBoxColumn7.Width = 150;
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.FieldName = "HasLead";
+            gridViewTextBoxColumn8.HeaderText = "HasLead";
+            gridViewTextBoxColumn8.IsVisible = false;
+            gridViewTextBoxColumn8.Name = "HasLead";
             this.Transactionlist.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -150,14 +178,17 @@
             gridViewTextBoxColumn4,
             gridViewTextBoxColumn5,
             gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7});
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8});
             this.Transactionlist.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.Transactionlist.Name = "Transactionlist";
             this.Transactionlist.ReadOnly = true;
+            this.Transactionlist.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Transactionlist.ShowGroupPanel = false;
             this.Transactionlist.Size = new System.Drawing.Size(772, 197);
             this.Transactionlist.TabIndex = 0;
             this.Transactionlist.ThemeName = "Breeze";
+            this.Transactionlist.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.Transactionlist_CellDoubleClick);
             // 
             // radTitleBar1
             // 
@@ -205,32 +236,10 @@
             this.radLabel1.TabIndex = 3;
             this.radLabel1.Text = "Select Company";
             // 
-            // bSearch
-            // 
-            this.bSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(219)))), ((int)(((byte)(244)))));
-            this.bSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bSearch.ForeColor = System.Drawing.Color.Black;
-            this.bSearch.Image = global::Evolution.Properties.Resources.find;
-            this.bSearch.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bSearch.Location = new System.Drawing.Point(375, 23);
-            this.bSearch.Name = "bSearch";
-            this.bSearch.Size = new System.Drawing.Size(90, 30);
-            this.bSearch.TabIndex = 2;
-            this.bSearch.Text = "Search";
-            this.bSearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bSearch.Click += new System.EventHandler(this.bSearch_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).Image = global::Evolution.Properties.Resources.find;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).Text = "Search";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.bSearch.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bSearch.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
-            // 
             // Companylist
             // 
             this.Companylist.AutoSize = false;
+            this.Companylist.DropDownAnimationEnabled = true;
             this.Companylist.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.Companylist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Companylist.Location = new System.Drawing.Point(113, 25);
@@ -243,6 +252,7 @@
             // 
             this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.radGroupBox2.Controls.Add(this.bLeadQ);
             this.radGroupBox2.Controls.Add(this.radLabel7);
             this.radGroupBox2.Controls.Add(this.RealPaymentDate);
             this.radGroupBox2.Controls.Add(this.radLabel6);
@@ -258,10 +268,22 @@
             this.radGroupBox2.HeaderText = "";
             this.radGroupBox2.Location = new System.Drawing.Point(12, 308);
             this.radGroupBox2.Name = "radGroupBox2";
-            this.radGroupBox2.Size = new System.Drawing.Size(426, 199);
+            this.radGroupBox2.Size = new System.Drawing.Size(461, 199);
             this.radGroupBox2.TabIndex = 3;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radGroupBox2.GetChildAt(0).GetChildAt(1).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radGroupBox2.GetChildAt(0).GetChildAt(1).GetChildAt(0))).SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
+            // 
+            // bLeadQ
+            // 
+            this.bLeadQ.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bLeadQ.Location = new System.Drawing.Point(263, 12);
+            this.bLeadQ.Name = "bLeadQ";
+            this.bLeadQ.Size = new System.Drawing.Size(63, 21);
+            this.bLeadQ.TabIndex = 21;
+            this.bLeadQ.TabStop = false;
+            this.bLeadQ.Text = "Lead Q";
+            this.bLeadQ.Visible = false;
+            this.bLeadQ.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.bLeadQ_ToggleStateChanged);
             // 
             // radLabel7
             // 
@@ -388,6 +410,121 @@
             this.Reference.TabIndex = 0;
             this.Reference.ThemeName = "Breeze";
             // 
+            // Sumpaymentmade
+            // 
+            this.Sumpaymentmade.BackColor = System.Drawing.Color.White;
+            this.Sumpaymentmade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sumpaymentmade.ForeColor = System.Drawing.Color.Green;
+            this.Sumpaymentmade.Location = new System.Drawing.Point(523, 308);
+            this.Sumpaymentmade.Name = "Sumpaymentmade";
+            this.Sumpaymentmade.Size = new System.Drawing.Size(34, 21);
+            this.Sumpaymentmade.TabIndex = 4;
+            this.Sumpaymentmade.Text = "0.00";
+            this.Sumpaymentmade.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Sumpaymentmade.ThemeName = "Aqua";
+            // 
+            // radLabel5
+            // 
+            this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel5.Location = new System.Drawing.Point(485, 308);
+            this.radLabel5.Name = "radLabel5";
+            this.radLabel5.Size = new System.Drawing.Size(36, 21);
+            this.radLabel5.TabIndex = 5;
+            this.radLabel5.Text = "Total";
+            this.radLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            // 
+            // radGroupBox3
+            // 
+            this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox3.Controls.Add(this.bUndo);
+            this.radGroupBox3.Controls.Add(this.bApply);
+            this.radGroupBox3.Controls.Add(this.bExit);
+            this.radGroupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radGroupBox3.HeaderText = "";
+            this.radGroupBox3.Location = new System.Drawing.Point(479, 459);
+            this.radGroupBox3.Name = "radGroupBox3";
+            this.radGroupBox3.Size = new System.Drawing.Size(305, 48);
+            this.radGroupBox3.TabIndex = 8;
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(497, 48);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(77, 24);
+            this.radButton1.TabIndex = 9;
+            this.radButton1.Text = "Test";
+            this.radButton1.Visible = false;
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click_1);
+            // 
+            // radLabel8
+            // 
+            this.radLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel8.Location = new System.Drawing.Point(735, 78);
+            this.radLabel8.Name = "radLabel8";
+            this.radLabel8.Size = new System.Drawing.Size(31, 21);
+            this.radLabel8.TabIndex = 11;
+            this.radLabel8.Text = "Qty:";
+            this.radLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            // 
+            // lblLeadQty
+            // 
+            this.lblLeadQty.BackColor = System.Drawing.Color.White;
+            this.lblLeadQty.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLeadQty.ForeColor = System.Drawing.Color.Green;
+            this.lblLeadQty.Location = new System.Drawing.Point(766, 79);
+            this.lblLeadQty.Name = "lblLeadQty";
+            this.lblLeadQty.Size = new System.Drawing.Size(15, 21);
+            this.lblLeadQty.TabIndex = 10;
+            this.lblLeadQty.Text = "0";
+            this.lblLeadQty.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblLeadQty.ThemeName = "Aqua";
+            // 
+            // radLabel10
+            // 
+            this.radLabel10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel10.Location = new System.Drawing.Point(495, 78);
+            this.radLabel10.Name = "radLabel10";
+            this.radLabel10.Size = new System.Drawing.Size(92, 21);
+            this.radLabel10.TabIndex = 12;
+            this.radLabel10.Text = "Lead To Pay $:";
+            this.radLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            // 
+            // lblTotalLead
+            // 
+            this.lblTotalLead.BackColor = System.Drawing.Color.White;
+            this.lblTotalLead.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalLead.ForeColor = System.Drawing.Color.Green;
+            this.lblTotalLead.Location = new System.Drawing.Point(593, 78);
+            this.lblTotalLead.Name = "lblTotalLead";
+            this.lblTotalLead.Size = new System.Drawing.Size(34, 21);
+            this.lblTotalLead.TabIndex = 13;
+            this.lblTotalLead.Text = "0.00";
+            this.lblTotalLead.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblTotalLead.ThemeName = "Aqua";
+            // 
+            // bUndo
+            // 
+            this.bUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(219)))), ((int)(((byte)(244)))));
+            this.bUndo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bUndo.ForeColor = System.Drawing.Color.Black;
+            this.bUndo.Image = global::Evolution.Properties.Resources.undo;
+            this.bUndo.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bUndo.Location = new System.Drawing.Point(107, 9);
+            this.bUndo.Name = "bUndo";
+            this.bUndo.Size = new System.Drawing.Size(90, 30);
+            this.bUndo.TabIndex = 8;
+            this.bUndo.Text = "Undo";
+            this.bUndo.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bUndo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bUndo.Click += new System.EventHandler(this.bUndo_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).Image = global::Evolution.Properties.Resources.undo;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).Text = "Undo";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.bUndo.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bUndo.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
+            // 
             // bApply
             // 
             this.bApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(219)))), ((int)(((byte)(244)))));
@@ -434,74 +571,28 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.bExit.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
             ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bExit.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
-            // Sumpaymentmade
+            // bSearch
             // 
-            this.Sumpaymentmade.BackColor = System.Drawing.Color.White;
-            this.Sumpaymentmade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sumpaymentmade.ForeColor = System.Drawing.Color.Green;
-            this.Sumpaymentmade.Location = new System.Drawing.Point(488, 308);
-            this.Sumpaymentmade.Name = "Sumpaymentmade";
-            this.Sumpaymentmade.Size = new System.Drawing.Size(34, 21);
-            this.Sumpaymentmade.TabIndex = 4;
-            this.Sumpaymentmade.Text = "0.00";
-            this.Sumpaymentmade.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.Sumpaymentmade.ThemeName = "Aqua";
-            // 
-            // radLabel5
-            // 
-            this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel5.Location = new System.Drawing.Point(441, 308);
-            this.radLabel5.Name = "radLabel5";
-            this.radLabel5.Size = new System.Drawing.Size(36, 21);
-            this.radLabel5.TabIndex = 5;
-            this.radLabel5.Text = "Total";
-            this.radLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            // 
-            // radGroupBox3
-            // 
-            this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox3.Controls.Add(this.bUndo);
-            this.radGroupBox3.Controls.Add(this.bApply);
-            this.radGroupBox3.Controls.Add(this.bExit);
-            this.radGroupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radGroupBox3.HeaderText = "";
-            this.radGroupBox3.Location = new System.Drawing.Point(479, 459);
-            this.radGroupBox3.Name = "radGroupBox3";
-            this.radGroupBox3.Size = new System.Drawing.Size(305, 48);
-            this.radGroupBox3.TabIndex = 8;
-            // 
-            // bUndo
-            // 
-            this.bUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(219)))), ((int)(((byte)(244)))));
-            this.bUndo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bUndo.ForeColor = System.Drawing.Color.Black;
-            this.bUndo.Image = global::Evolution.Properties.Resources.undo;
-            this.bUndo.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bUndo.Location = new System.Drawing.Point(107, 9);
-            this.bUndo.Name = "bUndo";
-            this.bUndo.Size = new System.Drawing.Size(90, 30);
-            this.bUndo.TabIndex = 8;
-            this.bUndo.Text = "Undo";
-            this.bUndo.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bUndo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bUndo.Click += new System.EventHandler(this.bUndo_Click);
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).Image = global::Evolution.Properties.Resources.undo;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.bUndo.GetChildAt(0))).Text = "Undo";
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.bUndo.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
-            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bUndo.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
-            // 
-            // radButton1
-            // 
-            this.radButton1.Location = new System.Drawing.Point(488, 63);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(77, 24);
-            this.radButton1.TabIndex = 9;
-            this.radButton1.Text = "Test";
-            this.radButton1.Visible = false;
-            this.radButton1.Click += new System.EventHandler(this.radButton1_Click_1);
+            this.bSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(219)))), ((int)(((byte)(244)))));
+            this.bSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bSearch.ForeColor = System.Drawing.Color.Black;
+            this.bSearch.Image = global::Evolution.Properties.Resources.find;
+            this.bSearch.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bSearch.Location = new System.Drawing.Point(375, 23);
+            this.bSearch.Name = "bSearch";
+            this.bSearch.Size = new System.Drawing.Size(90, 30);
+            this.bSearch.TabIndex = 2;
+            this.bSearch.Text = "Search";
+            this.bSearch.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bSearch.Click += new System.EventHandler(this.bSearch_Click);
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).Image = global::Evolution.Properties.Resources.find;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.RadButtonElement)(this.bSearch.GetChildAt(0))).Text = "Search";
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.bSearch.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(241)))), ((int)(((byte)(252)))));
+            ((Telerik.WinControls.Primitives.ImagePrimitive)(this.bSearch.GetChildAt(0).GetChildAt(1).GetChildAt(0))).ImageScaling = Telerik.WinControls.Enumerations.ImageScaling.SizeToFit;
             // 
             // HistoryCommission
             // 
@@ -509,8 +600,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(255)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(793, 521);
+            this.Controls.Add(this.lblTotalLead);
             this.Controls.Add(this.radButton1);
             this.Controls.Add(this.radGroupBox3);
+            this.Controls.Add(this.radLabel8);
+            this.Controls.Add(this.radLabel10);
+            this.Controls.Add(this.lblLeadQty);
             this.Controls.Add(this.radLabel5);
             this.Controls.Add(this.Sumpaymentmade);
             this.Controls.Add(this.radGroupBox2);
@@ -533,11 +628,11 @@
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Companylist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             this.radGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bLeadQ)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RealPaymentDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
@@ -550,14 +645,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.Amount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Invoicenumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Reference)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bApply)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Sumpaymentmade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bUndo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblLeadQty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTotalLead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bUndo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bApply)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,5 +691,10 @@
         private Telerik.WinControls.UI.RadDateTimePicker CreationDate1;
         private Telerik.WinControls.UI.RadLabel radLabel7;
         private Telerik.WinControls.UI.RadDateTimePicker RealPaymentDate;
+        private Telerik.WinControls.UI.RadRadioButton bLeadQ;
+        private Telerik.WinControls.UI.RadLabel radLabel8;
+        private Telerik.WinControls.UI.RadLabel lblLeadQty;
+        private Telerik.WinControls.UI.RadLabel radLabel10;
+        private Telerik.WinControls.UI.RadLabel lblTotalLead;
     }
 }

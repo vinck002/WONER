@@ -77,7 +77,8 @@ namespace Evolution.Forms
 
             if (TransactionsList.RowCount < 1) { return; }
             for (int record = 0; record <= TransactionsList.RowCount - 1; record++)
-            {TotalToMake += double.Parse(TransactionsList.Rows[record].Cells["Amount"].Value.ToString());
+            {
+                TotalToMake += double.Parse(TransactionsList.Rows[record].Cells["Amount"].Value.ToString());
             }
              Paymentmade.Text = TotalToMake.ToString("#,##0.00");
         }
@@ -119,6 +120,7 @@ namespace Evolution.Forms
             ProcesStatus1 = 0;
             
             HistoryCommission hhc = new HistoryCommission();
+        
             hhc.PaymentApplication = "yes";
             hhc.CompanyPercentID1 = int.Parse(Companylist.SelectedValue.ToString());
             hhc.SQLQuery1 = AgreementIDX2;
@@ -387,7 +389,7 @@ namespace Evolution.Forms
                     ((Contractdate1.Text == "") ? "01-01-1990" : Contractdate1.Text) + "','" + Contractdate2.Text + "', " + ((Contract1.Text.Trim() == "") ? "1" : Contract1.Text) + "," +
                     ((Contract2.Text.Trim() == "") ? "999999999" : Contract2.Text) + "," + ((Companylist.Text.Trim() == "") ? "null" : CompanyID.ToString()) + "").DefaultView;
                 
-                /*--------------------------------------------------------------------*/
+                /*--------------------------------------------------------------------------------------------*/
                 sumappliedpayment = SQLCMD.SQLdata("LS_CompanyReportHistory_L 0," + CompanyID + ",'" + ((Contractdate1.Text == "") ? "01-01-1990" : Contractdate1.Text) + "','" + Contractdate2.Text + "'").DefaultView;
                 
                 DVPayments = SQLCMD.SQLdata("LS_CompanyReportHistory_L 1," + CompanyID + ",'" + ((Contractdate1.Text == "") ? "01-01-1990" : Contractdate1.Text) + "','" + Contractdate2.Text + "'").DefaultView;
@@ -469,6 +471,23 @@ namespace Evolution.Forms
                 MessageBox.Show(EX.Message);
             }
            
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            if (TransactionsList.RowCount == 0)
+            {
+                return;
+            }
+      
+                contextMenuStrip1.Items[5].Visible = TransactionsList.CurrentRow.Cells["AgreementID"].Value.ToString() == "0";//nueva Forma de Condicion
+      
+        }
+
+        private void viewLeadStatusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LeadStatus _leadStatus = new LeadStatus(Convert.ToInt64(Companylist.SelectedValue));
+            _leadStatus.ShowDialog();
         }
         /*-------------------------------------------------------------------------------------------*/
     }

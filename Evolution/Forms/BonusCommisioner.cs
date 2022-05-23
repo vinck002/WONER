@@ -148,7 +148,7 @@ namespace Evolution.Forms
                     DialogResult Result = MessageBox.Show($"Do you want to change the Name:[ {Oldname} ] to [ {txtFullName.Text}]? " +
                      $"And Amount {OldAmount} to {txtAmount.Text}", "Changes", MessageBoxButtons.YesNo);
 
-                    if (Result == DialogResult.OK)
+                    if (Result == DialogResult.Yes)
                     {
                         ListCommissionerInfo = SQLCMD.SQLdata($"exec Sp_BonusCommissioner {Globalvariables.guserid},2," +
                                    $"{CommissionerInfo.CommissionerID},'{CommissionerInfo.FullName}',{CommissionerInfo.Amount}").AsEnumerable().Select(x => new BonusCommissionerModel()

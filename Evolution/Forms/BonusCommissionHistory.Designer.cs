@@ -29,17 +29,17 @@ namespace Evolution.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn1 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn2 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radGroupBox5 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel6 = new Telerik.WinControls.UI.RadLabel();
             this.txtBonusCode = new Telerik.WinControls.UI.RadTextBox();
@@ -211,81 +211,81 @@ namespace Evolution.Forms
             this.DTGBonusCommission.MasterTemplate.AllowDeleteRow = false;
             this.DTGBonusCommission.MasterTemplate.AllowRowHeaderContextMenu = false;
             this.DTGBonusCommission.MasterTemplate.AutoGenerateColumns = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "BonusCommissionID";
-            gridViewTextBoxColumn1.HeaderText = "BonusCommissionID";
-            gridViewTextBoxColumn1.IsVisible = false;
-            gridViewTextBoxColumn1.Name = "BonusCommissionID";
-            gridViewTextBoxColumn1.ReadOnly = true;
-            gridViewTextBoxColumn1.Width = 90;
-            gridViewTextBoxColumn1.WrapText = true;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "TotalPaidToContracts";
-            gridViewTextBoxColumn2.FormatString = "{0:C2}";
-            gridViewTextBoxColumn2.HeaderText = "TotalPaid US$ ";
-            gridViewTextBoxColumn2.Name = "TotalPaidToContracts";
-            gridViewTextBoxColumn2.ReadOnly = true;
-            gridViewTextBoxColumn2.Width = 91;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "ContractQuantity";
-            gridViewTextBoxColumn3.HeaderText = "Quantity";
-            gridViewTextBoxColumn3.Name = "ContractQuantity";
-            gridViewTextBoxColumn3.ReadOnly = true;
-            gridViewTextBoxColumn3.Width = 70;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "DateFrom";
-            gridViewTextBoxColumn4.HeaderText = "Date From";
-            gridViewTextBoxColumn4.Name = "DateFrom";
-            gridViewTextBoxColumn4.ReadOnly = true;
-            gridViewTextBoxColumn4.Width = 110;
-            gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "DateTo";
-            gridViewTextBoxColumn5.HeaderText = "DateTo";
-            gridViewTextBoxColumn5.Name = "DateTo";
-            gridViewTextBoxColumn5.ReadOnly = true;
-            gridViewTextBoxColumn5.Width = 100;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "Code";
-            gridViewTextBoxColumn6.HeaderText = "Code";
-            gridViewTextBoxColumn6.Name = "Code";
-            gridViewTextBoxColumn6.ReadOnly = true;
-            gridViewTextBoxColumn6.Width = 132;
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.FieldName = "CreationDate";
-            gridViewTextBoxColumn7.HeaderText = "Creation Date";
-            gridViewTextBoxColumn7.Name = "CreationDate";
-            gridViewTextBoxColumn7.ReadOnly = true;
-            gridViewTextBoxColumn7.Width = 100;
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.FieldName = "User";
-            gridViewTextBoxColumn8.HeaderText = "User";
-            gridViewTextBoxColumn8.Name = "User";
-            gridViewTextBoxColumn8.ReadOnly = true;
-            gridViewTextBoxColumn8.Width = 136;
-            gridViewCheckBoxColumn1.EnableExpressionEditor = false;
-            gridViewCheckBoxColumn1.FieldName = "Processed";
-            gridViewCheckBoxColumn1.HeaderText = "Processed";
-            gridViewCheckBoxColumn1.MinWidth = 20;
-            gridViewCheckBoxColumn1.Name = "Processed";
-            gridViewCheckBoxColumn1.ReadOnly = true;
-            gridViewCheckBoxColumn1.Width = 83;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "AgreementsIdBatch";
-            gridViewTextBoxColumn9.HeaderText = "AgreementsIdBatch";
-            gridViewTextBoxColumn9.IsVisible = false;
-            gridViewTextBoxColumn9.Name = "AgreementsIdBatch";
+            gridViewTextBoxColumn10.EnableExpressionEditor = false;
+            gridViewTextBoxColumn10.FieldName = "BonusCommissionID";
+            gridViewTextBoxColumn10.HeaderText = "BonusCommissionID";
+            gridViewTextBoxColumn10.IsVisible = false;
+            gridViewTextBoxColumn10.Name = "BonusCommissionID";
+            gridViewTextBoxColumn10.ReadOnly = true;
+            gridViewTextBoxColumn10.Width = 90;
+            gridViewTextBoxColumn10.WrapText = true;
+            gridViewTextBoxColumn11.EnableExpressionEditor = false;
+            gridViewTextBoxColumn11.FieldName = "TotalPaidToContracts";
+            gridViewTextBoxColumn11.FormatString = "{0:C2}";
+            gridViewTextBoxColumn11.HeaderText = "TotalPaid US$ ";
+            gridViewTextBoxColumn11.Name = "TotalPaidToContracts";
+            gridViewTextBoxColumn11.ReadOnly = true;
+            gridViewTextBoxColumn11.Width = 91;
+            gridViewTextBoxColumn12.EnableExpressionEditor = false;
+            gridViewTextBoxColumn12.FieldName = "ContractQuantity";
+            gridViewTextBoxColumn12.HeaderText = "Quantity";
+            gridViewTextBoxColumn12.Name = "ContractQuantity";
+            gridViewTextBoxColumn12.ReadOnly = true;
+            gridViewTextBoxColumn12.Width = 70;
+            gridViewTextBoxColumn13.EnableExpressionEditor = false;
+            gridViewTextBoxColumn13.FieldName = "DateFrom";
+            gridViewTextBoxColumn13.HeaderText = "Date From";
+            gridViewTextBoxColumn13.Name = "DateFrom";
+            gridViewTextBoxColumn13.ReadOnly = true;
+            gridViewTextBoxColumn13.Width = 110;
+            gridViewTextBoxColumn14.EnableExpressionEditor = false;
+            gridViewTextBoxColumn14.FieldName = "DateTo";
+            gridViewTextBoxColumn14.HeaderText = "DateTo";
+            gridViewTextBoxColumn14.Name = "DateTo";
+            gridViewTextBoxColumn14.ReadOnly = true;
+            gridViewTextBoxColumn14.Width = 100;
+            gridViewTextBoxColumn15.EnableExpressionEditor = false;
+            gridViewTextBoxColumn15.FieldName = "Code";
+            gridViewTextBoxColumn15.HeaderText = "Code";
+            gridViewTextBoxColumn15.Name = "Code";
+            gridViewTextBoxColumn15.ReadOnly = true;
+            gridViewTextBoxColumn15.Width = 132;
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "CreationDate";
+            gridViewTextBoxColumn16.HeaderText = "Creation Date";
+            gridViewTextBoxColumn16.Name = "CreationDate";
+            gridViewTextBoxColumn16.ReadOnly = true;
+            gridViewTextBoxColumn16.Width = 100;
+            gridViewTextBoxColumn17.EnableExpressionEditor = false;
+            gridViewTextBoxColumn17.FieldName = "User";
+            gridViewTextBoxColumn17.HeaderText = "User";
+            gridViewTextBoxColumn17.Name = "User";
+            gridViewTextBoxColumn17.ReadOnly = true;
+            gridViewTextBoxColumn17.Width = 136;
+            gridViewCheckBoxColumn2.EnableExpressionEditor = false;
+            gridViewCheckBoxColumn2.FieldName = "Processed";
+            gridViewCheckBoxColumn2.HeaderText = "Processed";
+            gridViewCheckBoxColumn2.MinWidth = 20;
+            gridViewCheckBoxColumn2.Name = "Processed";
+            gridViewCheckBoxColumn2.ReadOnly = true;
+            gridViewCheckBoxColumn2.Width = 83;
+            gridViewTextBoxColumn18.EnableExpressionEditor = false;
+            gridViewTextBoxColumn18.FieldName = "AgreementsIdBatch";
+            gridViewTextBoxColumn18.HeaderText = "AgreementsIdBatch";
+            gridViewTextBoxColumn18.IsVisible = false;
+            gridViewTextBoxColumn18.Name = "AgreementsIdBatch";
             this.DTGBonusCommission.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewTextBoxColumn4,
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8,
-            gridViewCheckBoxColumn1,
-            gridViewTextBoxColumn9});
-            this.DTGBonusCommission.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12,
+            gridViewTextBoxColumn13,
+            gridViewTextBoxColumn14,
+            gridViewTextBoxColumn15,
+            gridViewTextBoxColumn16,
+            gridViewTextBoxColumn17,
+            gridViewCheckBoxColumn2,
+            gridViewTextBoxColumn18});
+            this.DTGBonusCommission.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.DTGBonusCommission.Name = "DTGBonusCommission";
             this.DTGBonusCommission.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DTGBonusCommission.ShowGroupPanel = false;
